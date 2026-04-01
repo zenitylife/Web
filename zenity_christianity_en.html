@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ZENITY · Contemplative Ring | Silent Prayer · Abiding with God</title>
+    <meta name="description" content="ZENITY smart ring for Christian practitioners - Rosary counting, Hourly prayers (Divine Office), Jesus Prayer timer, Centering Prayer tracking, Lectio Divina, Stillness analysis, Lenten challenge support.">
+    <meta name="keywords" content="Christian meditation ring, Rosary counter, Contemplative prayer ring, Jesus Prayer timer, Centering Prayer device, Divine Office tracker, Lectio Divina, Christian wearable, stillness meditation">
+    <meta name="author" content="ZENITY Cross-Faith Practice Lab">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zenity.dev/zenity_christianity_en.html">
+    <meta name="theme-color" content="#F8F5F0">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zenity.dev/zenity_christianity_en.html">
+    <meta property="og:title" content="ZENITY · Christian Contemplative Prayer Ring">
+    <meta property="og:description" content="Smart ring for Christian contemplative practitioners - Rosary counting, Jesus Prayer, Centering Prayer tracking.">
+    <meta property="og:site_name" content="ZENITY">
+    <meta property="og:locale" content="en_US">
+    <link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_christianity_en.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_christianity_cn.html">
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@graph": [{"@type": "FAQPage", "mainEntity": [
+      {"@type": "Question", "name": "How does ZENITY help Christian contemplation?", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY counts Rosary beads automatically, tracks Hourly prayers and Jesus Prayer sessions, measures stillness levels during Centering Prayer, and supports Lenten practice challenges."}},
+      {"@type": "Question", "name": "What is Centering Prayer?", "acceptedAnswer": {"@type": "Answer", "text": "Centering Prayer is a modern Christian contemplative practice. ZENITY tracks stillness duration and HRV patterns to measure the depth of this meditation form."}}
+    ]}]}
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { background-color: #F8F5F0; font-family: 'Inter', sans-serif; color: #2F2E2B; }
+        .serif-text { font-family: 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: 0.02em; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1400px; margin: 0 auto; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .logo { font-size: 1.8rem; font-weight: 500; font-family: 'Cormorant Garamond', serif; background: linear-gradient(135deg, #6A5A4F, #9C8B78); background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .nav-links { display: flex; gap: 2.5rem; font-weight: 400; font-size: 0.95rem; }
+        .nav-links a { text-decoration: none; color: #5E5549; transition: 0.2s; }
+        .nav-links a:hover { color: #9B7E64; }
+        .nav-links .lang-switch { text-decoration: none; color: #6C6358; font-size: 0.85rem; border: 1px solid #E3D9CF; padding: 0.4rem 0.8rem; border-radius: 20px; margin-left: 1rem; transition: 0.2s; }
+        .nav-links .lang-switch:hover { background: #F4EFE8; }
+        .btn-outline { border: 1px solid #6A5A4F; padding: 0.5rem 1.3rem; border-radius: 40px; background: transparent; font-weight: 500; cursor: pointer; }
+        .btn-outline:hover { background: #6A5A4F; color: white; }
+        .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 4rem 0 5rem; gap: 2rem; }
+        .hero-text { flex: 1.2; }
+        .hero-badge { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; background: #E9E2D8; display: inline-block; padding: 0.3rem 0.8rem; border-radius: 30px; margin-bottom: 1.5rem; }
+        .hero-text h1 { font-size: 3.6rem; font-weight: 500; line-height: 1.2; margin-bottom: 1.5rem; }
+        .hero-text p { font-size: 1.15rem; color: #6A5A4F; max-width: 90%; margin-bottom: 2rem; line-height: 1.5; }
+        .ring-visual { flex: 0.9; text-align: center; position: relative; }
+        .ring-glow { width: 280px; height: 280px; background: radial-gradient(circle, rgba(156,139,120,0.2) 0%, rgba(245,235,220,0) 80%); border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0; }
+        .ring-img { width: 260px; position: relative; z-index: 2; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); }
+        .sacred-symbols { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; opacity: 0.7; font-size: 1.4rem; color: #9C8B78; }
+        .faith-section { margin: 6rem 0; }
+        .section-title { text-align: center; font-size: 2.2rem; font-weight: 500; margin-bottom: 1rem; }
+        .section-sub { text-align: center; color: #6A5A4F; max-width: 650px; margin: 0 auto 3rem auto; }
+        .faith-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
+        .faith-card { background: #FFFFFFE6; border-radius: 32px; padding: 1.8rem 1.5rem; text-align: center; transition: all 0.3s ease; border: 1px solid #F0EAE2; border-top: 3px solid #C2AD93; }
+        .faith-card i { font-size: 2.2rem; margin-bottom: 1rem; color: #9B7E64; }
+        .faith-card h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        .faith-card p { font-size: 0.85rem; color: #5F564B; }
+        .tech-showcase { background: #F0EAE2; border-radius: 56px; padding: 4rem 2rem; margin: 5rem 0; }
+        .tech-flex { display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center; }
+        .tech-item { flex: 1; text-align: center; min-width: 200px; }
+        .tech-icon { font-size: 2.6rem; background: #FFFFFF; width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 1.2rem; }
+        .tech-item h4 { font-size: 1.5rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .interactive-demo { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; justify-content: space-between; margin: 4rem 0; }
+        .demo-text { flex: 1; }
+        .demo-ring { flex: 0.8; background: radial-gradient(ellipse at 30% 40%, #F8F5F0, #F0EAE2); border-radius: 280px; padding: 2rem; text-align: center; }
+        .ring-control { display: inline-block; background: #fff; border-radius: 160px; padding: 0.8rem 1.6rem; margin: 0.5rem; box-shadow: 0 5px 12px rgba(0,0,0,0.05); font-weight: 500; cursor: pointer; }
+        .feature-list { list-style: none; margin-top: 1.5rem; }
+        .feature-list li { margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.8rem; }
+        .crypto-energy { background: #3A3530; color: #F5EFE7; border-radius: 48px; padding: 3rem 2rem; text-align: center; margin: 4rem 0; }
+        .energy-badge { font-size: 2rem; font-weight: 600; background: rgba(255,255,240,0.1); display: inline-block; padding: 0.5rem 1.8rem; border-radius: 60px; font-family: monospace; }
+        .testimonials { margin: 5rem 0; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 2rem; }
+        .quote { background: white; padding: 2rem; border-radius: 28px; border: 1px solid #EDE3D8; }
+        footer { border-top: 1px solid #E3D9CF; padding: 2.5rem 0; text-align: center; color: #6C6358; font-size: 0.8rem; }
+        .btn-primary { background: #9B7E64; color: white; border: none; padding: 0.9rem 2rem; border-radius: 40px; font-weight: 500; cursor: pointer; }
+        .btn-primary:hover { background: #7A624C; }
+        @media (max-width:800px){ .hero-text h1{ font-size:2.5rem; } .navbar{ flex-direction:column; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">ZENITY · Contemplative Ring</a>
+        <div class="nav-links">
+            <a href="#">Rosary</a>
+            <a href="#">Divine Hours</a>
+            <a href="#">Centering Prayer</a>
+            <a href="#">Lent</a>
+            <a href="zenity_christianity_cn.html" class="lang-switch"><i class="fas fa-globe"></i> 中文</a>
+            <a href="index.html" class="lang-switch" style="margin-left:0;"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <div class="hero-badge"><i class="fas fa-cross"></i> Silent Prayer · Abiding with God</div>
+                <h1 class="serif-text">In Stillness, Listen<br>to His Voice</h1>
+                <p>ZENITY Contemplative Ring monitors "stillness of soul" through HRV, rotation counting simulates rosary beads, and haptic timers sync with the Divine Hours. Transform prayer and contemplation into a tangible "stillness index", deepening your contemplative life.</p>
+                <button class="btn-primary" id="discoverRing"><i class="fas fa-ring"></i> Enter the Quiet</button>
+            </div>
+            <div class="ring-visual">
+                <div class="ring-glow"></div>
+                <img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23C2AD93' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23F8F5F0' stroke='%239B7E64' stroke-width='3' /%3E%3C/svg%3E" alt="ZENITY Ring">
+                <div class="sacred-symbols"><i class="fas fa-cross"></i><i class="fas fa-church"></i><i class="fas fa-dove"></i></div>
+            </div>
+        </div>
+        <div class="faith-section">
+            <h2 class="section-title serif-text">Prayer Tools · Heart Prayer Counting</h2>
+            <p class="section-sub">From the Rosary to the Jesus Prayer, from Divine Hours to Lenten spirituality, ZENITY becomes your prayer companion.</p>
+            <div class="faith-grid">
+                <div class="faith-card"><i class="fas fa-rosary"></i><h3>Rosary Counting</h3><p>53+6 bead structure auto-grouped, vibration alert when each decade is complete</p></div>
+                <div class="faith-card"><i class="fas fa-praying-hands"></i><h3>Jesus Prayer Counting</h3><p>Each repetition counts on rotation, vibration celebration at 100 "heart prayers"</p></div>
+                <div class="faith-card"><i class="fas fa-bell"></i><h3>Divine Hours Reminders</h3><p>Vibration alerts for Lauds, Terce, Sext, None, Vespers, Compline</p></div>
+                <div class="faith-card"><i class="fas fa-calendar-alt"></i><h3>Lenten Mode</h3><p>40-day daily check-in, spiritual growth report generated</p></div>
+            </div>
+        </div>
+        <div class="tech-showcase">
+            <div class="tech-flex">
+                <div class="tech-item"><div class="tech-icon"><i class="fas fa-heartbeat"></i></div><h4>Stillness Index</h4><p>HRV translated into "soul stillness level", reflecting contemplative depth</p><div id="silenceIndex" style="font-family: serif;">Current stillness: Deep peace</div></div>
+                <div class="tech-item"><div class="tech-icon"><i class="fas fa-hourglass-half"></i></div><h4>Contemplation Timer</h4><p>Free contemplation timing, gentle vibration at end, like cathedral bells</p></div>
+                <div class="tech-item"><div class="tech-icon"><i class="fas fa-church"></i></div><h4>Sunday/Feast Reminders</h4><p>Special spiritual guidance for Sunday, Christmas, Easter</p></div>
+            </div>
+        </div>
+        <div class="interactive-demo">
+            <div class="demo-text">
+                <h2 class="serif-text" style="font-size:2rem;">Prayer Beads at Your Fingertips</h2>
+                <p>Gently twist the ring for each "Hail Mary" — the ring vibrates softly; after one decade (53+6), a longer vibration signals "Mystery complete". Gesture recognition auto-records making the sign of the cross. At Divine Hours, the ring gently reminds you to pause and return to stillness.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-sync-alt"></i> Rotation counting: Rosary / Jesus Prayer</li>
+                    <li><i class="fas fa-stopwatch"></i> Haptic timer: Divine Hours / Lent check-in</li>
+                    <li><i class="fas fa-hand-peace"></i> Gesture recognition: Making the sign of the cross</li>
+                </ul>
+                <div class="ring-control" id="demoCountBtn"><i class="fas fa-ring"></i> Rosary Counting</div>
+                <div class="ring-control" id="demoTimerBtn"><i class="fas fa-hourglass-half"></i> Contemplation Timer Demo</div>
+                <p style="margin-top:1rem;" id="countDisplay">Today's rosary: 0 decades</p>
+            </div>
+            <div class="demo-ring"><i class="fas fa-hand-peace" style="font-size: 4rem;"></i><p>Wear on finger · Silent presence</p><div style="background:#e9dfd3; border-radius:60px; padding:0.5rem;"><i class="fas fa-microchip"></i> Stillness monitoring active</div></div>
+        </div>
+        <div class="crypto-energy">
+            <h2 class="serif-text">✝️ Prayer Energy · Chain Memorial</h2>
+            <p>Every prayer, every decade of the Rosary, converted into immutable "prayer imprints", witnessing your spiritual journey.</p>
+            <div class="energy-badge" id="energyMeter"><i class="fas fa-bolt"></i> Accumulated Prayers: 2,456 decades</div>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial-grid">
+                <div class="quote"><i class="fas fa-quote-left"></i><p>"Rosary counting keeps me from losing count. Each decade's vibration helps me focus on the mystery meditation."</p><strong>— Teresa, Catholic</strong></div>
+                <div class="quote"><i class="fas fa-quote-left"></i><p>"Divine Hours reminders sanctify my day. The stillness index helps me evaluate contemplation quality."</p><strong>— John, Anglican</strong></div>
+                <div class="quote"><i class="fas fa-quote-left"></i><p>"The 40-day Lenten challenge, the ring recorded daily prayers. Seeing the growth trajectory at the end was deeply moving."</p><strong>— Maria, Spiritual director</strong></div>
+            </div>
+        </div>
+    </div>
+    <footer><p>ZENITY · Contemplative Ring — Be still, and know that I am God (Psalm 46:10)</p><p>© 2026 ZENITY Contemplative Technology Lab</p></footer>
+    <script>
+        let count=0, countDisplay=document.getElementById('countDisplay'), demoCount=document.getElementById('demoCountBtn'), demoTimer=document.getElementById('demoTimerBtn'), energySpan=document.getElementById('energyMeter');
+        demoCount.onclick=()=>{ count++; countDisplay.innerText=`Today's rosary: ${count} decades`; if('vibrate'in navigator)navigator.vibrate(50); let e=parseInt(energySpan.innerText.match(/\d+/)?.[0])||2456; energySpan.innerHTML=`<i class="fas fa-bolt"></i> Accumulated Prayers: ${e+1} decades`; };
+        demoTimer.onclick=()=>{ if('vibrate'in navigator)navigator.vibrate([200,100,200]); alert("🕊️ Contemplation time complete. May the Lord grant you peace."); };
+        const silence=["Perfect stillness","Deep peace","Gentle ripples","Returning to peace"]; let idx=0; setInterval(()=>{ document.getElementById('silenceIndex').innerText=`Current stillness: ${silence[idx%4]}`; idx++; },5000);
+        document.getElementById('discoverRing').onclick=()=>document.querySelector('.tech-showcase').scrollIntoView({behavior:'smooth'});
+    </script>
+</body>
+</html>

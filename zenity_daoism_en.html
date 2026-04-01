@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ZENITY · Dao Ring | Heaven-Earth Unity · Inner Alchemy</title>
+    <meta name="description" content="ZENITY smart ring for Daoist practitioners - Wheel-turning (Zuoche) counting, Four-period reminders (Zishengu), Zi-Wu-Mao-You timing, Qi-blood interpretation, Organ-fire regulation, Inner Alchemy tracking.">
+    <meta name="keywords" content="Daoist ring, Inner Alchemy ring, Zuoche counter, Daoist meditation timer, Four-period practice, Zi-Wu-Mao-You, Qi-blood analysis, Organ-fire regulation, Small Heavenly Cycle, Solar terms meditation, Daoist wearable">
+    <meta name="author" content="ZENITY Cross-Faith Practice Lab">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zenity.dev/zenity_daoism_en.html">
+    <meta name="theme-color" content="#F5F0E6">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zenity.dev/zenity_daoism_en.html">
+    <meta property="og:title" content="ZENITY · Daoist Inner Alchemy Ring">
+    <meta property="og:description" content="Smart ring for Daoist practitioners - Wheel-turning counting, organ-fire regulation, Qi-blood interpretation.">
+    <meta property="og:site_name" content="ZENITY">
+    <meta property="og:locale" content="en_US">
+    <link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_daoism_en.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_daoism_cn.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{"@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": "How does ZENITY help Daoist Inner Alchemy?", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY counts Wheel-turning (Zuoche) rotations, provides Zi-Wu-Mao-You timing reminders, tracks Qi-blood circulation and organ-fire states during meditation sessions."}},
+        {"@type": "Question", "name": "What is Small Heavenly Cycle practice?", "acceptedAnswer": {"@type": "Answer", "text": "The Small Heavenly Cycle (Xiaozhoutian) is a fundamental Daoist breathing meditation technique. ZENITY tracks the completion of these cycles through rotation counting and HRV analysis."}}
+      ]}]
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: #F5F0E6; font-family: 'Inter', sans-serif; color: #2C3A2B; scroll-behavior: smooth; }
+        .serif-text { font-family: 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: 0.02em; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1400px; margin: 0 auto; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .logo { font-size: 1.8rem; font-weight: 500; letter-spacing: 2px; font-family: 'Cormorant Garamond', serif; background: linear-gradient(135deg, #5C7A4A, #8FAA7B); background-clip: text; -webkit-background-clip: text; color: transparent; }
+        .nav-links { display: flex; gap: 2.5rem; font-weight: 400; font-size: 0.95rem; }
+        .nav-links a { text-decoration: none; color: #4A5B3E; transition: 0.2s; }
+        .nav-links a:hover { color: #6C8B52; }
+        .nav-links .lang-switch { text-decoration: none; color: #6C6358; font-size: 0.85rem; border: 1px solid #E3D9CF; padding: 0.4rem 0.8rem; border-radius: 20px; margin-left: 1rem; transition: 0.2s; }
+        .nav-links .lang-switch:hover { background: #F4EFE8; }
+        .btn-outline { border: 1px solid #5C7A4A; padding: 0.5rem 1.3rem; border-radius: 40px; background: transparent; font-weight: 500; transition: 0.2s; cursor: pointer; }
+        .btn-outline:hover { background: #5C7A4A; color: white; }
+        .hero { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 4rem 0 5rem; gap: 2rem; }
+        .hero-text { flex: 1.2; }
+        .hero-badge { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 3px; background: #E2E6D9; display: inline-block; padding: 0.3rem 0.8rem; border-radius: 30px; margin-bottom: 1.5rem; }
+        .hero-text h1 { font-size: 3.6rem; font-weight: 500; line-height: 1.2; margin-bottom: 1.5rem; }
+        .hero-text p { font-size: 1.15rem; color: #526A46; max-width: 90%; margin-bottom: 2rem; line-height: 1.5; }
+        .ring-visual { flex: 0.9; text-align: center; position: relative; }
+        .ring-glow { width: 280px; height: 280px; background: radial-gradient(circle, rgba(110,142,80,0.2) 0%, rgba(245,235,220,0) 80%); border-radius: 50%; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 0; }
+        .ring-img { width: 260px; position: relative; z-index: 2; filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1)); }
+        .sacred-symbols { display: flex; justify-content: center; gap: 2rem; margin-top: 2rem; opacity: 0.7; font-size: 1.4rem; color: #8FAA7B; }
+        .faith-section { margin: 6rem 0; }
+        .section-title { text-align: center; font-size: 2.2rem; font-weight: 500; margin-bottom: 1rem; }
+        .section-sub { text-align: center; color: #5A7250; max-width: 650px; margin: 0 auto 3rem auto; }
+        .faith-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
+        .faith-card { background: #FFFFFFE6; backdrop-filter: blur(2px); border-radius: 32px; padding: 1.8rem 1.5rem; text-align: center; transition: all 0.3s ease; border: 1px solid #EAE6DD; box-shadow: 0 4px 12px rgba(0,0,0,0.02); border-top: 3px solid #8FAA7B; }
+        .faith-card:hover { transform: translateY(-6px); border-color: #C9D2B6; box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1); }
+        .faith-card i { font-size: 2.2rem; margin-bottom: 1rem; color: #6C8B52; }
+        .faith-card h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        .faith-card p { font-size: 0.85rem; color: #5F6753; margin-bottom: 1rem; }
+        .tech-showcase { background: #E8EFE0; border-radius: 56px; padding: 4rem 2rem; margin: 5rem 0; }
+        .tech-flex { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; justify-content: center; }
+        .tech-item { flex: 1; text-align: center; min-width: 200px; }
+        .tech-icon { font-size: 2.6rem; background: #FFFFFF; width: 80px; height: 80px; line-height: 80px; border-radius: 50%; margin: 0 auto 1.2rem; box-shadow: 0 8px 18px rgba(0,0,0,0.03); }
+        .tech-item h4 { font-size: 1.5rem; font-weight: 500; margin-bottom: 0.5rem; }
+        .interactive-demo { display: flex; flex-wrap: wrap; gap: 3rem; align-items: center; justify-content: space-between; margin: 4rem 0; }
+        .demo-text { flex: 1; }
+        .demo-ring { flex: 0.8; background: radial-gradient(ellipse at 30% 40%, #F5F0E6, #E8EFE0); border-radius: 280px; padding: 2rem; text-align: center; }
+        .ring-control { display: inline-block; background: #fff; border-radius: 160px; padding: 0.8rem 1.6rem; margin: 0.5rem; box-shadow: 0 5px 12px rgba(0,0,0,0.05); font-weight: 500; cursor: pointer; }
+        .feature-list { list-style: none; margin-top: 1.5rem; }
+        .feature-list li { margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.8rem; }
+        .crypto-energy { background: #2E3D2A; color: #F0F2E6; border-radius: 48px; padding: 3rem 2rem; text-align: center; margin: 4rem 0; }
+        .energy-badge { font-size: 2rem; font-weight: 600; background: rgba(255,255,240,0.1); display: inline-block; padding: 0.5rem 1.8rem; border-radius: 60px; backdrop-filter: blur(4px); font-family: monospace; }
+        .testimonials { margin: 5rem 0; }
+        .testimonial-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px,1fr)); gap: 2rem; }
+        .quote { background: white; padding: 2rem; border-radius: 28px; box-shadow: 0 8px 20px rgba(0,0,0,0.02); border: 1px solid #E6EADB; }
+        footer { border-top: 1px solid #DAE2CF; padding: 2.5rem 0; text-align: center; color: #6C7560; font-size: 0.8rem; }
+        .btn-primary { background: #6C8B52; color: white; border: none; padding: 0.9rem 2rem; border-radius: 40px; font-weight: 500; cursor: pointer; transition: 0.2s; }
+        .btn-primary:hover { background: #4F6A3A; }
+        @media (max-width: 800px) { .hero-text h1 { font-size: 2.5rem; } .navbar { flex-direction: column; gap: 1rem; } .nav-links { gap: 1.5rem; flex-wrap: wrap; justify-content: center; } }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">ZENITY · Dao Ring</a>
+        <div class="nav-links">
+            <a href="#">Inner Alchemy</a>
+            <a href="#">Breathwork</a>
+            <a href="#">Meridian Cycle</a>
+            <a href="#">Fire Regulation</a>
+            <a href="zenity_daoism_cn.html" class="lang-switch"><i class="fas fa-globe"></i> 中文</a>
+            <a href="index.html" class="lang-switch" style="margin-left:0;"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <div class="hero-badge"><i class="fas fa-yin-yang"></i> Heaven-Earth Unity · Following the Dao</div>
+                <h1 class="serif-text">Preserve the One<br>Realize the True</h1>
+                <p>ZENITY Dao Ring monitors "breath-mind unity" through HRV, rotation counting simulates "turning the he che" (meridian cycle), and haptic timers remind you of the four optimal practice hours. Quantify the "fire regulation" of Inner Alchemy practice, helping you refine essence into qi, and qi into spirit.</p>
+                <button class="btn-primary" id="discoverRing"><i class="fas fa-ring"></i> Enter the Alchemy Chamber</button>
+            </div>
+            <div class="ring-visual">
+                <div class="ring-glow"></div>
+                <img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%238FAA7B' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23F5F0E6' stroke='%236C8B52' stroke-width='3' /%3E%3Cpath d='M100 40 L100 60 M100 140 L100 160 M60 100 L40 100 M140 100 L160 100' stroke='%238FAA7B' stroke-width='4' stroke-linecap='round' /%3E%3C/svg%3E" alt="ZENITY Ring">
+                <div class="sacred-symbols">
+                    <i class="fas fa-yin-yang"></i>
+                    <i class="fas fa-feather-alt"></i>
+                    <i class="fas fa-dragon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="faith-section">
+            <h2 class="section-title serif-text">Alchemy Tools · Precise Fire Regulation</h2>
+            <p class="section-sub">From guarding the dantian to meridian cycles, from breathwork to embryonic breathing, ZENITY Dao Ring helps you maintain practice rhythm.</p>
+            <div class="faith-grid">
+                <div class="faith-card"><i class="fas fa-lungs"></i><h3>Guard the One</h3><p>Auto-detect breathing cycles, 1-10 counting, enter stillness depth visualization</p></div>
+                <div class="faith-card"><i class="fas fa-charging-station"></i><h3>He Che Counting</h3><p>Finger circle gesture sensing, record Minor Heavenly Cycle rotations</p></div>
+                <div class="faith-card"><i class="fas fa-clock"></i><h3>Four-Period Reminders</h3><p>Vibration alerts at Zi-Wu-Mao-You, optimal practice hours when heaven-earth yin-yang meet</p></div>
+                <div class="faith-card"><i class="fas fa-seedling"></i><h3>Solar Term Practice</h3><p>24 solar terms guide suggestions, HRV interpretation of qi-blood abundance</p></div>
+            </div>
+        </div>
+
+        <div class="tech-showcase">
+            <div class="tech-flex">
+                <div class="tech-item"><div class="tech-icon"><i class="fas fa-heartbeat"></i></div><h4>Qi-Blood Analysis</h4><p>HRV translated into "qi abundance/deficiency/stagnation", traditional diagnostic feedback</p><div id="qiStatus" style="font-family: serif; margin-top: 8px;">Current: Qi in harmony</div></div>
+                <div class="tech-item"><div class="tech-icon"><i class="fas fa-chart-line"></i></div><h4>Fire Quantification</h4><p>Using "100 breaths = 1 ke" as unit, auto-calculate practice fire</p></div>
+                <div class="tech-item"><div class="tech-icon"><i class="fas fa-mountain"></i></div><h4>Retreat Mode</h4><p>Set retreat days, disable non-practice features, generate alchemy report at completion</p></div>
+            </div>
+        </div>
+
+        <div class="interactive-demo">
+            <div class="demo-text">
+                <h2 class="serif-text" style="font-size:2rem;">Meridian Cycle at Your Fingertips</h2>
+                <p>Gently twist the ring to simulate "turning the he che" — each rotation records one meridian cycle. Long-press with two fingers to start Zi-wei (midnight) practice, with vibration alert when complete, signaling "one ke of fire is sufficient". Built-in gyroscope recognizes circle gestures, quantifying Minor Heavenly progress.</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-sync-alt"></i> Rotation counting: He Che cycle rotations</li>
+                    <li><i class="fas fa-stopwatch"></i> Haptic timer: Zi-Wu-Mao-You hour reminders</li>
+                    <li><i class="fas fa-hand-peace"></i> Gesture recognition: Circle drawing, he che, dantian guarding</li>
+                </ul>
+                <div class="ring-control" id="demoCountBtn"><i class="fas fa-ring"></i> He Che Counting</div>
+                <div class="ring-control" id="demoTimerBtn"><i class="fas fa-hourglass-half"></i> Zi-Wei Practice Demo</div>
+                <p style="margin-top:1rem;font-size:0.8rem;" id="countDisplay">He Che cycles: 0</p>
+            </div>
+            <div class="demo-ring">
+                <i class="fas fa-hand-peace" style="font-size: 4rem; opacity: 0.7;"></i>
+                <p style="margin-top:1rem;">Wear on finger · Qi flows through meridians</p>
+                <div style="background:#e9dfd3; border-radius: 60px; padding: 0.5rem; margin-top:1rem;"><i class="fas fa-microchip"></i> Qi flow monitoring active</div>
+            </div>
+        </div>
+
+        <div class="crypto-energy">
+            <h2 class="serif-text" style="color:#F0F2E6;">⚡ Alchemy Energy · Chain Verification</h2>
+            <p style="max-width:700px;margin:0.8rem auto;">Every he che rotation, every ke of fire, converted into immutable "alchemy energy", recording practice progress forever on-chain.</p>
+            <div class="energy-badge" id="energyMeter"><i class="fas fa-bolt"></i> Accumulated Alchemy Qi: 8,562 breaths</div>
+            <p style="margin-top: 2rem; font-size:0.8rem;">Alchemy credentials generated from HRV depth, meridian cycles, and hourly practice.</p>
+        </div>
+
+        <div class="testimonials">
+            <h2 class="section-title serif-text">Practitioners' Testimonies</h2>
+            <div class="testimonial-grid">
+                <div class="quote"><i class="fas fa-quote-left" style="color:#C6B194;"></i><p>"The Zi-Wu-Mao-You four-period reminders let me never miss the moments when heaven and earth intersect, doubling my practice effectiveness."</p><strong>— Qingfeng, Inner Alchemy practitioner</strong></div>
+                <div class="quote"><i class="fas fa-quote-left" style="color:#C6B194;"></i><p>"The he che counter is precise. Drawing circles with my fingers records meridian cycles — no more distraction from counting."</p><strong>— Xuanming, Inner Alchemy cultivator</strong></div>
+                <div class="quote"><i class="fas fa-quote-left" style="color:#C6B194;"></i><p>"Seven days in retreat, the ring recorded daily fire regulation. After exiting, the HRV trends confirmed the changes in my qi meridians. Amazing!"</p><strong>— Baopu, Daoist health practitioner</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><i class="fas fa-ring"></i> ZENITY · Dao Ring — Man follows earth, earth follows heaven, heaven follows the Dao, the Dao follows itself</p>
+            <p style="margin-top: 1rem;">© 2026 ZENITY Dao Technology Lab | Carry the Dao through vessels, verify truth through numbers</p>
+        </div>
+    </footer>
+
+    <script>
+        let countValue = 0;
+        const countDisplay = document.getElementById('countDisplay');
+        const demoCountBtn = document.getElementById('demoCountBtn');
+        const demoTimerBtn = document.getElementById('demoTimerBtn');
+        const energySpan = document.getElementById('energyMeter');
+        const qiDiv = document.getElementById('qiStatus');
+
+        demoCountBtn.addEventListener('click', () => {
+            countValue++;
+            countDisplay.innerText = `He Che cycles: ${countValue}`;
+            if ('vibrate' in navigator) navigator.vibrate(50);
+            let currentEnergy = parseInt(energySpan.innerText.match(/\d+/)?.[0]) || 8562;
+            energySpan.innerHTML = `<i class="fas fa-bolt"></i> Accumulated Alchemy Qi: ${currentEnergy + 1} breaths`;
+        });
+
+        demoTimerBtn.addEventListener('click', () => {
+            if ('vibrate' in navigator) navigator.vibrate([200, 100, 200]);
+            alert("🧘 Zi-Wei practice complete · One ke of fire is sufficient.");
+        });
+
+        const qiStates = ["Qi in harmony", "Yang qi rising", "Qi abundant, conserve", "Slight qi stagnation", "True qi filling"];
+        setInterval(() => {
+            let idx = Math.floor(Math.random() * qiStates.length);
+            qiDiv.innerText = `Current: ${qiStates[idx]}`;
+        }, 6000);
+
+        document.getElementById('discoverRing').addEventListener('click', () => {
+            document.querySelector('.tech-showcase').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>

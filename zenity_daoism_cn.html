@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>ZENITY · 道戒 | 天人合一 · 丹道内景</title>
+    <meta name="description" content="ZENITY智能戒指 - 道教修行伴侣，转河车计数、子午卯酉四正时提醒、气血解读、脏腑火候调节、内丹修炼追踪、小周天修行。">
+    <meta name="keywords" content="道戒,内丹戒指,转河车计数器,道教冥想计时,四正时修炼,子午卯酉,气血分析,脏腑火候,小周天,节气修炼,道教穿戴设备">
+    <meta name="author" content="ZENITY 跨信仰修行实验室">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://zenity.dev/zenity_daoism_cn.html">
+    <meta name="theme-color" content="#F5F0E6">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zenity.dev/zenity_daoism_cn.html">
+    <meta property="og:title" content="ZENITY · 道教内丹戒指">
+    <meta property="og:description" content="道教修行者智能戒指 - 转河车计数、脏腑火候调节、气血解读。">
+    <meta property="og:site_name" content="ZENITY">
+    <meta property="og:locale" content="zh-CN">
+    <link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_daoism_en.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_daoism_cn.html">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [{"@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": "ZENITY如何帮助道教内丹修炼？", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY计数转河车次数，提供子午卯酉时段提醒，在冥想期间追踪气血运行和脏腑火候状态。"}},
+        {"@type": "Question", "name": "什么是小周天修炼？", "acceptedAnswer": {"@type": "Answer", "text": "小周天是道教基础的内丹呼吸冥想技法。ZENITY通过转动计数和HRV分析追踪这些周天的完成情况。"}}
+      ]}]
+    }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #F5F0E6;  /* 宣纸底色 */
+            font-family: 'Inter', sans-serif;
+            color: #2C3A2B;
+            scroll-behavior: smooth;
+        }
+        .serif-text {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 500;
+            letter-spacing: 2px;
+            font-family: 'Cormorant Garamond', serif;
+            background: linear-gradient(135deg, #5C7A4A, #8FAA7B);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            font-weight: 400;
+            font-size: 0.95rem;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #4A5B3E;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: #6C8B52;
+        }
+        .btn-outline {
+            border: 1px solid #5C7A4A;
+            padding: 0.5rem 1.3rem;
+            border-radius: 40px;
+            background: transparent;
+            font-weight: 500;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        .btn-outline:hover {
+            background: #5C7A4A;
+            color: white;
+        }
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 0 5rem;
+            gap: 2rem;
+        }
+        .hero-text {
+            flex: 1.2;
+        }
+        .hero-badge {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            background: #E2E6D9;
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 30px;
+            margin-bottom: 1.5rem;
+        }
+        .hero-text h1 {
+            font-size: 3.6rem;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        .hero-text p {
+            font-size: 1.15rem;
+            color: #526A46;
+            max-width: 90%;
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+        .ring-visual {
+            flex: 0.9;
+            text-align: center;
+            position: relative;
+        }
+        .ring-glow {
+            width: 280px;
+            height: 280px;
+            background: radial-gradient(circle, rgba(110,142,80,0.2) 0%, rgba(245,235,220,0) 80%);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+        .ring-img {
+            width: 260px;
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(0 20px 30px rgba(0,0,0,0.1));
+        }
+        .sacred-symbols {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            opacity: 0.7;
+            font-size: 1.4rem;
+            color: #8FAA7B;
+        }
+        .faith-section {
+            margin: 6rem 0;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        .section-sub {
+            text-align: center;
+            color: #5A7250;
+            max-width: 650px;
+            margin: 0 auto 3rem auto;
+        }
+        .faith-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+        .faith-card {
+            background: #FFFFFFE6;
+            backdrop-filter: blur(2px);
+            border-radius: 32px;
+            padding: 1.8rem 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 1px solid #EAE6DD;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+            border-top: 3px solid #8FAA7B;
+        }
+        .faith-card:hover {
+            transform: translateY(-6px);
+            border-color: #C9D2B6;
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+        }
+        .faith-card i {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            color: #6C8B52;
+        }
+        .faith-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .faith-card p {
+            font-size: 0.85rem;
+            color: #5F6753;
+            margin-bottom: 1rem;
+        }
+        .tech-showcase {
+            background: #E8EFE0;
+            border-radius: 56px;
+            padding: 4rem 2rem;
+            margin: 5rem 0;
+        }
+        .tech-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+            justify-content: center;
+        }
+        .tech-item {
+            flex: 1;
+            text-align: center;
+            min-width: 200px;
+        }
+        .tech-icon {
+            font-size: 2.6rem;
+            background: #FFFFFF;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1.2rem;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.03);
+        }
+        .tech-item h4 {
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        .interactive-demo {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+            justify-content: space-between;
+            margin: 4rem 0;
+        }
+        .demo-text {
+            flex: 1;
+        }
+        .demo-ring {
+            flex: 0.8;
+            background: radial-gradient(ellipse at 30% 40%, #F5F0E6, #E8EFE0);
+            border-radius: 280px;
+            padding: 2rem;
+            text-align: center;
+        }
+        .ring-control {
+            display: inline-block;
+            background: #fff;
+            border-radius: 160px;
+            padding: 0.8rem 1.6rem;
+            margin: 0.5rem;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.05);
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .feature-list {
+            list-style: none;
+            margin-top: 1.5rem;
+        }
+        .feature-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+        }
+        .crypto-energy {
+            background: #2E3D2A;
+            color: #F0F2E6;
+            border-radius: 48px;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin: 4rem 0;
+        }
+        .energy-badge {
+            font-size: 2rem;
+            font-weight: 600;
+            background: rgba(255,255,240,0.1);
+            display: inline-block;
+            padding: 0.5rem 1.8rem;
+            border-radius: 60px;
+            backdrop-filter: blur(4px);
+            font-family: monospace;
+        }
+        .testimonials {
+            margin: 5rem 0;
+        }
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+            gap: 2rem;
+        }
+        .quote {
+            background: white;
+            padding: 2rem;
+            border-radius: 28px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+            border: 1px solid #E6EADB;
+        }
+        footer {
+            border-top: 1px solid #DAE2CF;
+            padding: 2.5rem 0;
+            text-align: center;
+            color: #6C7560;
+            font-size: 0.8rem;
+        }
+        .btn-primary {
+            background: #6C8B52;
+            color: white;
+            border: none;
+            padding: 0.9rem 2rem;
+            border-radius: 40px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .btn-primary:hover {
+            background: #4F6A3A;
+        }
+        @media (max-width: 800px) {
+            .hero-text h1 { font-size: 2.5rem; }
+            .navbar { flex-direction: column; gap: 1rem; }
+            .nav-links { gap: 1.5rem; flex-wrap: wrap; justify-content: center; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="logo">ZENITY · 道戒</a>
+        <div class="nav-links">
+            <a href="#">内丹</a>
+            <a href="#">吐纳</a>
+            <a href="#">周天</a>
+            <a href="#">火候</a>
+            <a href="index.html" class="lang-switch"><i class="fas fa-globe"></i> English</a>
+            <a href="cn.html" class="lang-switch" style="margin-left:0;"><i class="fas fa-home"></i> 首页</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <div class="hero-badge"><i class="fas fa-yin-yang"></i> 天人合一 · 道法自然</div>
+                <h1 class="serif-text">守一存真<br>与道合真</h1>
+                <p>ZENITY道戒以HRV监测“心息相依”，旋转计数模拟“转河车”，振动计时如“子午卯酉”四正时提醒。将内丹修炼的“火候”量化，助你炼精化气，炼气化神。</p>
+                <button class="btn-primary" id="discoverRing"><i class="fas fa-ring"></i> 入丹室</button>
+            </div>
+            <div class="ring-visual">
+                <div class="ring-glow"></div>
+                <img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%238FAA7B' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23F5F0E6' stroke='%236C8B52' stroke-width='3' /%3E%3Cpath d='M100 40 L100 60 M100 140 L100 160 M60 100 L40 100 M140 100 L160 100' stroke='%238FAA7B' stroke-width='4' stroke-linecap='round' /%3E%3C/svg%3E" alt="ZENITY Ring">
+                <div class="sacred-symbols">
+                    <i class="fas fa-yin-yang"></i>
+                    <i class="fas fa-feather-alt"></i>
+                    <i class="fas fa-dragon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="faith-section">
+            <h2 class="section-title serif-text">丹道法器 · 火候精准</h2>
+            <p class="section-sub">从守窍到周天，从吐纳到胎息，ZENITY道戒为你把握修炼节律。</p>
+            <div class="faith-grid">
+                <div class="faith-card">
+                    <i class="fas fa-lungs"></i>
+                    <h3>数息守一</h3>
+                    <p>自动识别呼吸周期，1-10循环计数，入静深度可视化</p>
+                </div>
+                <div class="faith-card">
+                    <i class="fas fa-charging-station"></i>
+                    <h3>转河车计数</h3>
+                    <p>手指画圆手势感应，记录小周天运转圈数</p>
+                </div>
+                <div class="faith-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>四正时提醒</h3>
+                    <p>子午卯酉振动提醒，顺应天地阴阳交汇最佳修炼时辰</p>
+                </div>
+                <div class="faith-card">
+                    <i class="fas fa-seedling"></i>
+                    <h3>节气修炼</h3>
+                    <p>二十四节气推送导引建议，HRV解读“气血盛衰”</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tech-showcase">
+            <div class="tech-flex">
+                <div class="tech-item">
+                    <div class="tech-icon"><i class="fas fa-heartbeat"></i></div>
+                    <h4>气血状态解读</h4>
+                    <p>HRV数据翻译为“气盛/气虚/气滞”，传统诊断式反馈</p>
+                    <div id="qiStatus" style="font-family: serif; margin-top: 8px;">当前：气机调和</div>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>火候计量</h4>
+                    <p>以“百息为一刻”为单位，自动累加修炼火候</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-icon"><i class="fas fa-mountain"></i></div>
+                    <h4>闭关模式</h4>
+                    <p>设定闭关天数，关闭非修行功能，出关生成丹道报告</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="interactive-demo">
+            <div class="demo-text">
+                <h2 class="serif-text" style="font-size:2rem;">指间周天 · 河车运转</h2>
+                <p>轻转戒指模拟“转河车”，每转一圈记录一次周天运行。双指长按启动子时修炼，结束时振动提醒“一刻火候已足”。内置陀螺仪识别画圆手势，量化小周天进度。</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-sync-alt"></i> 旋转计数：河车运转圈数</li>
+                    <li><i class="fas fa-stopwatch"></i> 振动计时：子午卯酉时辰提醒</li>
+                    <li><i class="fas fa-hand-peace"></i> 手势识别：画圆转河车、抱拳守窍</li>
+                </ul>
+                <div class="ring-control" id="demoCountBtn"><i class="fas fa-ring"></i> 转河车计数</div>
+                <div class="ring-control" id="demoTimerBtn"><i class="fas fa-hourglass-half"></i> 子时修炼演示</div>
+                <p style="margin-top:1rem;font-size:0.8rem;" id="countDisplay">河车运转：0 圈</p>
+            </div>
+            <div class="demo-ring">
+                <i class="fas fa-hand-peace" style="font-size: 4rem; opacity: 0.7;"></i>
+                <p style="margin-top:1rem;">佩戴于指 · 气脉流转</p>
+                <div style="background:#e9dfd3; border-radius: 60px; padding: 0.5rem; margin-top:1rem;">
+                    <i class="fas fa-microchip"></i> 气机实时监测
+                </div>
+            </div>
+        </div>
+
+        <div class="crypto-energy">
+            <h2 class="serif-text" style="color:#F0F2E6;">⚡ 丹道能量 · 链上存证</h2>
+            <p style="max-width:700px;margin:0.8rem auto;">每一次转河车、每一刻火候，均转化为不可篡改的“丹道能量”，记录修炼精进，永存于链。</p>
+            <div class="energy-badge" id="energyMeter">
+                <i class="fas fa-bolt"></i> 累积丹能: 8,562 息
+            </div>
+            <p style="margin-top: 2rem; font-size:0.8rem;">基于HRV深度、周天运转次数、时辰修炼生成丹能凭证。</p>
+        </div>
+
+        <div class="testimonials">
+            <h2 class="section-title serif-text">同修见证</h2>
+            <div class="testimonial-grid">
+                <div class="quote"><i class="fas fa-quote-left" style="color:#C6B194;"></i><p>“子午卯酉四正时提醒让我不再错过天地交泰的时刻，修炼效果事半功倍。”</p><strong>—— 清风，丹道修士</strong></div>
+                <div class="quote"><i class="fas fa-quote-left" style="color:#C6B194;"></i><p>“转河车计数精准，手指画圆即可记录周天运转，再也不用分心计数。”</p><strong>—— 玄明，内丹修炼者</strong></div>
+                <div class="quote"><i class="fas fa-quote-left" style="color:#C6B194;"></i><p>“闭关七日，戒指记录每日火候，出关后HRV趋势印证了气脉的变化，太神奇了。”</p><strong>—— 抱朴，道家养生者</strong></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p><i class="fas fa-ring"></i> ZENITY · 道戒 — 人法地，地法天，天法道，道法自然</p>
+            <p style="margin-top: 1rem;">© 2026 ZENITY 丹道科技实验室 | 以器载道 以数证真</p>
+        </div>
+    </footer>
+
+    <script>
+        let countValue = 0;
+        const countDisplay = document.getElementById('countDisplay');
+        const demoCountBtn = document.getElementById('demoCountBtn');
+        const demoTimerBtn = document.getElementById('demoTimerBtn');
+        const energySpan = document.getElementById('energyMeter');
+        const qiDiv = document.getElementById('qiStatus');
+
+        demoCountBtn.addEventListener('click', () => {
+            countValue++;
+            countDisplay.innerText = `河车运转：${countValue} 圈`;
+            if ('vibrate' in navigator) navigator.vibrate(50);
+            let currentEnergy = parseInt(energySpan.innerText.match(/\d+/)?.[0]) || 8562;
+            energySpan.innerHTML = `<i class="fas fa-bolt"></i> 累积丹能: ${currentEnergy + 1} 息`;
+        });
+
+        demoTimerBtn.addEventListener('click', () => {
+            if ('vibrate' in navigator) navigator.vibrate([200, 100, 200]);
+            alert("🧘 子时修炼结束 · 一刻火候已足。");
+        });
+
+        const qiStates = ["气机调和", "阳气初升", "气盛宜敛", "微有气滞", "真气充盈"];
+        setInterval(() => {
+            let idx = Math.floor(Math.random() * qiStates.length);
+            qiDiv.innerText = `当前：${qiStates[idx]}`;
+        }, 6000);
+
+        document.getElementById('discoverRing').addEventListener('click', () => {
+            document.querySelector('.tech-showcase').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
