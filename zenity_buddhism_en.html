@@ -27,16 +27,88 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
+      "@graph": [{
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {"@type": "Question", "name": "How does ZENITY help Buddhist meditation?", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY monitors HRV to calculate One-Pointedness (ekaggata) index, counts Buddha names automatically, tracks breath sessions, provides drowsiness alerts, and times incense meditation sessions."}},
-            {"@type": "Question", "name": "What is One-Pointedness index?", "acceptedAnswer": {"@type": "Answer", "text": "One-Pointedness (ekaggata) is a key measure of meditation quality in Buddhism. ZENITY uses HRV variability patterns to quantify this state of focused attention."}},
-            {"@type": "Question", "name": "Does ZENITY count Buddha names?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, ZENITY's rotation counting feature can automatically track Buddha-name recitations through ring gestures, functioning as a digital prayer bead counter."}}
-          ]
+          "@type": "Question",
+          "name": "How does ZENITY help Buddhist meditation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZENITY monitors HRV to calculate One-Pointedness (ekaggata) index, counts Buddha names through ring rotation, tracks breath meditation (anapanasati) sessions, provides drowsiness alerts via haptic feedback, and times incense meditation with gentle vibration reminders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is One-Pointedness (ekaggata) index?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One-Pointedness (ekaggata in Pali) is a Buddhist mental factor representing unified focused attention. ZENITY calculates this index by analyzing HRV coherence patterns — higher coherence correlates with deeper meditative absorption (jhana)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ZENITY count Buddha names?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. ZENITY's gyroscope detects ring rotation — twist gently to count each Buddha-name recitation like turning wooden prayer beads. The ring vibrates at each count and auto-groups into sets of 108."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ZENITY track breath meditation (anapanasati)?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. ZENITY monitors breathing rhythm through HRV-derived respiratory sinus arrhythmia. It guides breath counting from 1 to 10, alerts when the mind wanders, and generates post-session breathing coherence reports."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ZENITY have a meditation timer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Long-press with two fingers to start. The ring vibrates gently at the end — like a wooden fish. Preset durations: 30 min (incense stick), 60 min (sitting), and custom retreat mode."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does drowsiness alert work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZENITY monitors HRV patterns indicating drowsiness or agitation. When coherence drops, the ring delivers a gentle vibration to return to breath — stronger vibrations for deeper drowsiness."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ZENITY track prostrations?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The accelerometer detects five-point prostration movements and counts each automatically. Useful for Buddhist repentance rituals and full-prostration practices."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Merit Ledger?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each session generates a unique merit imprint hash based on HRV depth, duration, and mantra count. Stored on blockchain as an immutable, private record of your practice journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ZENITY suitable for beginners?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Beginners benefit from guided breath counting and drowsiness alerts. Advanced practitioners track One-Pointedness depth, set retreat goals, and analyze long-term HRV trends."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the battery life during retreat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "7 days under normal use. During intensive retreat (continuous HRV monitoring), approximately 4-5 days. Quick-charge provides 24 hours from 15 minutes."
+          }
         }
-      ]
+      }]
     }
     </script>
     
@@ -119,7 +191,7 @@
             </div>
             <div class="ring-visual">
                 <div class="ring-glow"></div>
-                <img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23C9AA7B' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23FEF7E8' stroke='%23A67B45' stroke-width='3' /%3E%3Cpath d='M100 40 L100 60 M100 140 L100 160 M60 100 L40 100 M140 100 L160 100' stroke='%23B78F5A' stroke-width='4' stroke-linecap='round' /%3E%3C/svg%3E" alt="ZENITY Ring">
+                <img class="ring-img" src="Assembled Ring.jpg" alt="ZENITY Assembled Ring - Buddhist Meditation Smart Ring" style="width: 280px; height: 280px; object-fit: contain;">
                 <div class="sacred-symbols">
                     <i class="fas fa-buddha"></i>
                     <i class="fas fa-leaf"></i>
@@ -187,6 +259,11 @@
     <footer>
         <div class="container">
             <p><i class="fas fa-ring"></i> ZENITY · Zen Ring — When awareness arises, the thought is extinguished</p>
+            <p >            <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.2rem;">
+                <a href="https://twitter.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.reddit.com/user/zenitylife" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+            </div>
             <p style="margin-top: 1rem;">© 2026 ZENITY Zen Technology Lab | The precepts as teacher, the numbers as mirror</p>
         </div>
     </footer>

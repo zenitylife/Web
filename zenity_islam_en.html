@@ -19,10 +19,91 @@
     <link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_islam_en.html">
     <link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_islam_cn.html">
     <script type="application/ld+json">
-    {"@context": "https://schema.org", "@graph": [{"@type": "FAQPage", "mainEntity": [
-      {"@type": "Question", "name": "How does ZENITY help Islamic Dhikr practice?", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY automatically counts Tasbih (prayer beads) through ring rotations, tracks the 99 Names of Allah, provides Salah timing reminders, and measures the Hudur (spiritual presence) index based on HRV patterns."}},
-      {"@type": "Question", "name": "What is Hudur index?", "acceptedAnswer": {"@type": "Answer", "text": "Hudur (حضور) means 'presence' in Arabic - a measure of spiritual awareness and tranquility during Islamic meditation. ZENITY quantifies this through HRV coherence analysis."}}
-    ]}]}
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+        {
+          "@type": "Question",
+          "name": "How does ZENITY support Dhikr and Tasbih?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZENITY counts Tasbih (33/99 beads) through ring rotation, tracks the 99 Names of God, monitors the five daily prayer times, and analyzes the Hudur (heart presence) index through HRV during Dhikr."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ZENITY count the 99 Names of Allah?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Set to 99 Names mode — each rotation advances to the next name. Vibrates after each group of 33, long vibration at completion of all 99. Companion app displays each name's meaning."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Tasbih grouping work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Default groups of 33: Subhanallah (33), Alhamdulillah (33), Allahu Akbar (33). Different vibration patterns between groups maintain awareness of each section."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ZENITY have Salat reminders?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Calculates prayer times based on location (Fajr, Dhuhr, Asr, Maghrib, Isha). Supports multiple calculation methods (Umm al-Qura, Muslim World League, etc.)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the Hudur (heart presence) index?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sufi concept of heart-centered presence during Dhikr. ZENITY calculates this index from HRV coherence and heart rate patterns during remembrance practice."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can ZENITY track Tahajjud?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Tahajjud mode wakes with gentle vibration during the last third of the night (configurable), tracks rak'ah units, and monitors spiritual energy."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is ZENITY suitable for Ramadan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Ramadan mode includes: Suhoor reminder, Iftar notification, nightly Taraweeh tracking, Laylat al-Qadr detection, and 30-day spiritual progress report."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does ZENITY support Sufi whirling?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Gyroscope detects circular motion of Sama. Tracks rotation count, speed, duration. HRV monitors ecstatic state coherence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does ZENITY handle Wudu?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP68 waterproof — keep on during Wudu. Can even track Wudu completeness through gesture recognition."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes ZENITY different from a digital Tasbih?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Combines Tasbih counting with HRV heart presence analysis, breath-Dhikr synchronization, Salat tracking, Ramadan management, and blockchain-verified spiritual energy records."
+          }
+        }
+      }]
+    }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -76,7 +157,7 @@
     <div class="container">
         <div class="hero">
             <div class="hero-text"><div class="hero-badge"><i class="fas fa-star-and-crescent"></i> Dhikr · Remembering Allah</div><h1 class="serif-text">Hearts Find Peace<br>Through Remembrance of Allah</h1><p>ZENITY Dhikr Ring monitors "Hudur" (presence of heart) through HRV, rotation counting for the 99 Names of Allah, vibration reminders for the five daily prayers. Auto-group tasbih (33-33-33), quantifying spiritual tranquility.</p><button class="btn-primary" id="discoverRing"><i class="fas fa-ring"></i> Begin Remembrance</button></div>
-            <div class="ring-visual"><img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%236B9C4A' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23F4F1EA' stroke='%234F9A4A' stroke-width='3' /%3E%3C/svg%3E" style="width:260px;"><div class="sacred-symbols"><i class="fas fa-star-and-crescent"></i><i class="fas fa-mosque"></i><i class="fas fa-hands-praying"></i></div></div>
+            <div class="ring-visual"><img class="ring-img" src="Assembled Ring.jpg" alt="ZENITY Assembled Ring - Islamic Dhikr Smart Ring" style="width: 280px; height: 280px; object-fit: contain;"><div class="sacred-symbols"><i class="fas fa-star-and-crescent"></i><i class="fas fa-mosque"></i><i class="fas fa-hands-praying"></i></div></div>
         </div>
         <div class="faith-grid">
             <div class="faith-card"><i class="fas fa-pray"></i><h3>99 Names Counting</h3><p>Rotate ring for each Name of Allah, 99 repetitions complete one circle</p></div>
@@ -87,7 +168,12 @@
         <div class="tech-showcase"><div class="tech-flex"><div class="tech-item"><div class="tech-icon"><i class="fas fa-heartbeat"></i></div><h4>Hudur Index</h4><p>Presence of heart, from Quran 13:28</p><div id="hudurIndex">Hudur: High</div></div><div class="tech-item"><div class="tech-icon"><i class="fas fa-people-arrows"></i></div><h4>Whirling Monitoring</h4><p>Gyroscope records rotation count, analyze ecstasy in inner tranquility</p></div><div class="tech-item"><div class="tech-icon"><i class="fas fa-moon"></i></div><h4>Tahajjud Record</h4><p>Auto-detect Tahajjud period, record devotion duration</p></div></div></div>
         <div class="interactive-demo"><div class="demo-text"><h2>Subha at Your Fingertips</h2><p>Gently twist the ring for each "SubhanAllah", the ring vibrates softly; after 33, auto-advance to next group. At prayer times, the ring vibrates to remind you — never miss a single prayer.</p><div class="ring-control" id="demoCountBtn"><i class="fas fa-ring"></i> Remembrance Counting</div><div class="ring-control" id="demoTimerBtn"><i class="fas fa-hourglass-half"></i> Prayer Time Demo</div><p id="countDisplay">Today's remembrance: 0</p></div><div class="demo-ring"><i class="fas fa-hand-peace"></i><p>Wear on finger · Remember in heart</p></div></div>
         <div class="crypto-energy"><h2>⚡ Remembrance Energy · Chain Verification</h2><p>Every dhikr, every prayer, converted into immutable "Dhikr energy", witnessing your devotion.</p><div class="energy-badge" id="energyMeter"><i class="fas fa-bolt"></i> Accumulated Remembrance: 12,849</div></div>
-        <footer><p>ZENITY · Dhikr Ring — Verily, in the remembrance of Allah do hearts find peace (Quran 13:28)</p></footer>
+        <footer><p>ZENITY · Dhikr Ring — Verily, in the remembrance of Allah do hearts find peace (Quran 13:28)</p>    <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.2rem; font-size: 1.1rem;">
+        <a href="https://twitter.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.reddit.com/user/zenitylife" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+    </div>
+    </footer>
     </div>
     <script>
         let c=0, cd=document.getElementById('countDisplay'), cb=document.getElementById('demoCountBtn'), tb=document.getElementById('demoTimerBtn'), em=document.getElementById('energyMeter'), hudur=document.getElementById('hudurIndex');

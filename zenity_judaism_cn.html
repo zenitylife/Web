@@ -19,10 +19,91 @@
     <link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_judaism_en.html">
     <link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_judaism_cn.html">
     <script type="application/ld+json">
-    {"@context": "https://schema.org", "@graph": [{"@type": "FAQPage", "mainEntity": [
-      {"@type": "Question", "name": "ZENITY如何帮助犹太灵性修行？", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY计数百福(祝福)，追踪数奥梅尔49天计数，提供自动安息日模式，通过HRV测量灵魂加添指数，并记录妥拉诵读课程。"}},
-      {"@type": "Question", "name": "什么是灵魂加添指数？", "acceptedAnswer": {"@type": "Answer", "text": "灵魂加添是犹太冥想期间灵性提升的衡量指标。ZENITY通过祈祷和冥想期间的HRV一致性模式来量化这一状态。"}}
-    ]}]}
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+        {
+          "@type": "Question",
+          "name": "ZENITY如何支持犹太教修行？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZENITY计数百福（Berakhot），管理数俄梅珥49天计数，提供安息日模式，通过HRV分析灵魂提升（Tikkun），并支持妥拉阅读追踪。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能计数百福吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。每转一圈计一福。可追踪每日100福目标（塔木德传统），每个里程碑振动一次。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "数俄梅珥如何工作？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "从逾越节第二晚到七七节自动计每天。日落时振动提醒、转动确认——再也不会忘记第几天。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是安息日模式？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "从周五日落到周六晚间，ZENITY关闭非必要通知遵守安息日。仅保留基本修行追踪，无屏幕无声音。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如何衡量灵魂提升（Tikkun）？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "分析祈祷和妥拉学习时的HRV相干性，计算Tikkun分数——通过诫命和灵性实践获得的灵魂提升。长期趋势显示品行完善进度。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能追踪三大朝圣节期吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。配套应用包含逾越节、七七节、住棚节及相关节期建议。戒指在节期前提供倒计时振动。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支持每日祈祷追踪吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持。追踪晨祷、午祷和晚祷三次日常祈祷。戒指提醒每次祈祷时间并记录出席情况。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "生命树（Sefirot）冥想如何工作？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "引导式卡巴拉冥想带你走过10个Sefirot——从Malkhut（王国）到Keter（冠冕）。每个Sefirah对应不同的HRV相干模式。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是Chesed-Gevurah平衡追踪？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "基于HRV交感迷走平衡分析，提供日常Chesed（慈爱）和Gevurah（力量/约束）平衡的洞察——对应卡巴拉的左右柱原则。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能为不同犹太传统定制吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。支持正统派、保守派、改革派和卡巴拉修行模式，每种模式调整祈祷时间、文本和计数方式以匹配您的minhag（习俗）。"
+          }
+        }
+      }]
+    }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -70,7 +151,7 @@
     <div class="container">
         <div class="hero">
             <div class="hero-text"><div class="hero-badge"><i class="fas fa-star-of-david"></i> 德维库特 · 与神联结</div><h1 class="serif-text">圣化时间，<br>与永恒立约</h1><p>ZENITY盟约戒以HRV监测“灵魂加添”指数，旋转计数百福（每日100次祝福），振动提醒安息日与三大节期。数奥梅尔49天自动追踪，妥拉诵读记录进度。</p><button class="btn-primary" id="discoverRing"><i class="fas fa-ring"></i> 进入盟约</button></div>
-            <div class="ring-visual"><img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%234C6A9E' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23F0F2F5' stroke='%232C3E66' stroke-width='3' /%3E%3C/svg%3E" style="width:260px;"><div class="sacred-symbols"><i class="fas fa-star-of-david"></i><i class="fas fa-menorah"></i><i class="fas fa-torah"></i></div></div>
+            <div class="ring-visual"><img class="ring-img" src="Assembled Ring.jpg" alt="ZENITY组合戒指 - 犹太教德维库特智能戒指" style="width: 280px; height: 280px; object-fit: contain;"><div class="sacred-symbols"><i class="fas fa-star-of-david"></i><i class="fas fa-menorah"></i><i class="fas fa-torah"></i></div></div>
         </div>
         <div class="faith-grid">
             <div class="faith-card"><i class="fas fa-hands-helping"></i><h3>百福计数</h3><p>每日100次祝福，每念一次轻转计数，百次圆满振动庆祝</p></div>
@@ -81,7 +162,12 @@
         <div class="tech-showcase"><div class="tech-flex"><div class="tech-item"><div class="tech-icon"><i class="fas fa-heartbeat"></i></div><h4>灵魂加添指数</h4><p>安息日HRV解读为“额外灵魂”，反映神圣临在</p><div id="neshama">灵魂加添：高</div></div><div class="tech-item"><div class="tech-icon"><i class="fas fa-hourglass-start"></i></div><h4>祈祷时间窗口</h4><p>根据哈拉哈计算晨祷等时间，避免错过</p></div><div class="tech-item"><div class="tech-icon"><i class="fas fa-tree"></i></div><h4>生命之树冥想</h4><p>引导卡巴拉源质冥想，记录专注深度</p></div></div></div>
         <div class="interactive-demo"><div class="demo-text"><h2>指间盟约 · 祝福计数器</h2><p>轻转戒指，每念一次祝福（Brakha），记录一次。安息日前30分钟振动提醒，帮助预备心灵。数奥梅尔每日自动提醒，49天灵程步步记录。</p><div class="ring-control" id="demoCountBtn"><i class="fas fa-ring"></i> 百福计数</div><div class="ring-control" id="demoTimerBtn"><i class="fas fa-hourglass-half"></i> 安息日演示</div><p id="countDisplay">今日祝福：0 / 100</p></div><div class="demo-ring"><i class="fas fa-hand-peace"></i><p>佩戴于指 · 与神立约</p></div></div>
         <div class="crypto-energy"><h2>⚡ 盟约能量 · 链上存证</h2><p>每一次祝福、每一个安息日、每一句妥拉，均转化为不可篡改的“盟约印记”，见证你与神的联结。</p><div class="energy-badge" id="energyMeter"><i class="fas fa-bolt"></i> 累积祝福: 18,234 次</div></div>
-        <footer><p>ZENITY · 盟约戒 — 你们要归我为圣，因为我耶和华是圣的（利未记20:26）</p></footer>
+        <footer><p>ZENITY · 盟约戒 — 你们要归我为圣，因为我耶和华是圣的（利未记20:26）</p>    <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.2rem; font-size: 1.1rem;">
+        <a href="https://twitter.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.reddit.com/user/zenitylife" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+    </div>
+    </footer>
     </div>
     <script>
         let c=0, cd=document.getElementById('countDisplay'), cb=document.getElementById('demoCountBtn'), tb=document.getElementById('demoTimerBtn'), em=document.getElementById('energyMeter'), nesh=document.getElementById('neshama');

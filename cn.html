@@ -9,6 +9,7 @@
     <meta name="author" content="ZENITY 跨信仰修行实验室">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://zenity.dev/cn.html">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://zenity.dev/sitemap.xml">
     <meta name="theme-color" content="#FCF9F4">
     <meta name="language" content="Chinese (Simplified)">
     
@@ -52,7 +53,8 @@
           "areaServed": "全球",
           "sameAs": [
             "https://twitter.com/zenityring",
-            "https://instagram.com/zenityring"
+            "https://instagram.com/zenityring",
+            "https://www.reddit.com/user/zenitylife"
           ]
         },
         {
@@ -70,24 +72,76 @@
           }
         },
         {
+          "@type": "BreadcrumbList",
+          "@id": "https://zenity.dev/#breadcrumb",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://zenity.dev/cn.html"},
+            {"@type": "ListItem", "position": 2, "name": "智能戒指", "item": "https://zenity.dev/cn.html#product"}
+          ]
+        },
+        {
           "@type": "Product",
           "name": "ZENITY 智能戒指",
-          "description": "跨信仰冥想修行智能戒指，配备HRV监测、转动计数、触觉计时器。",
-          "brand": {
-            "@type": "Brand",
-            "name": "ZENITY"
-          },
+          "description": "跨信仰冥想修行智能戒指，配备HRV监测、转动计数、触觉计时器、区块链灵性能量加密。",
+          "brand": {"@type": "Brand", "name": "ZENITY"},
           "category": "穿戴设备",
+          "material": ["钛合金", "陶瓷", "黄金", "钻石"],
+          "color": ["金色", "银色", "玫瑰金", "黑色"],
           "offers": {
             "@type": "Offer",
             "priceCurrency": "CNY",
             "price": "1999",
-            "availability": "https://schema.org/PreOrder"
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/PreOrder",
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 30
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "WW"}
+            }
           },
           "additionalProperty": [
-            {"@type": "PropertyValue", "name": "功能", "value": "HRV监测、转动计数、触觉冥想计时、呼吸追踪、手势识别"},
+            {"@type": "PropertyValue", "name": "功能", "value": "HRV监测、转动计数、触觉冥想计时、呼吸追踪、手势识别、IP68防水"},
             {"@type": "PropertyValue", "name": "支持修行", "value": "佛教、道教、基督教、伊斯兰教、犹太教"},
-            {"@type": "PropertyValue", "name": "防水等级", "value": "IP68"}
+            {"@type": "PropertyValue", "name": "防水等级", "value": "IP68"},
+            {"@type": "PropertyValue", "name": "电池续航", "value": "7天"},
+            {"@type": "PropertyValue", "name": "传感器", "value": "PPG HRV传感器、6轴陀螺仪、触觉马达"},
+            {"@type": "PropertyValue", "name": "专利技术", "value": "嵌套环设计，可拆卸宝石外环"}
+          ],
+          "review": [
+            {
+              "@type": "Review",
+              "reviewRating": {"@type": "Rating", "ratingValue": 5, "bestRating": 5},
+              "author": {"@type": "Person", "name": "明心"},
+              "reviewBody": "ZENITY的轻柔振动让我回到呼吸，如同师父在旁。HRV心一境性指数让进步变得可见。"
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {"@type": "Rating", "ratingValue": 5, "bestRating": 5},
+              "author": {"@type": "Person", "name": "Amina"},
+              "reviewBody": "斋月期间戒指记录我的夜间礼拜与齐克尔，泰斯比哈计数自动分组，胡杜尔指数真实反映心灵宁静。"
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 4.8,
+            "reviewCount": 24,
+            "bestRating": 5
+          }
+        },
+        {
+          "@type": "HowTo",
+          "name": "如何使用ZENITY智能戒指进行冥想",
+          "description": "一步步指南，教你使用ZENITY智能戒指进行灵性修行。",
+          "step": [
+            {"@type": "HowToStep", "position": 1, "text": "将ZENITY戒指戴在食指或中指上。"},
+            {"@type": "HowToStep", "position": 2, "text": "轻轻转动戒指，计数佛号、祈祷或呼吸周期。"},
+            {"@type": "HowToStep", "position": 3, "text": "双指长按启动冥想计时器，戒指会触觉反馈。"},
+            {"@type": "HowToStep", "position": 4, "text": "戒指实时监测HRV，计算您的心一境性指数。"},
+            {"@type": "HowToStep", "position": 5, "text": "在配套应用中查看灵性能量评分和修行历史。"}
           ]
         },
         {
@@ -96,34 +150,62 @@
             {
               "@type": "Question",
               "name": "什么是ZENITY智能戒指？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ZENITY是一款专为跨信仰冥想修行者设计的智能戒指。它监测心率变异性(HRV)、计数祈祷文/咒语、提供触觉冥想计时器，并在佛教、道教、基督教、伊斯兰教和犹太教中追踪灵性进程。"
-              }
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY是一款专为跨信仰冥想修行者设计的智能戒指。它监测心率变异性(HRV)、计数祈祷文/咒语、提供触觉冥想计时器，并在佛教、道教、基督教、伊斯兰教和犹太教中追踪灵性进程。"}
             },
             {
               "@type": "Question",
               "name": "ZENITY支持哪些宗教修行？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ZENITY支持五大传统：佛教（念佛计数、呼吸冥想）、道教（转河车、内丹）、基督教（玫瑰经、默观祈祷）、伊斯兰教（泰斯比哈、齐克尔、五时拜功）和犹太教（百福、数奥梅尔）。"
-              }
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY支持五大传统：佛教（念佛计数、呼吸冥想）、道教（转河车、内丹）、基督教（玫瑰经、默观祈祷）、伊斯兰教（泰斯比哈、齐克尔、五时拜功）和犹太教（百福、数奥梅尔）。"}
             },
             {
               "@type": "Question",
               "name": "HRV冥想追踪如何工作？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ZENITY监测心率变异性(HRV)来测量副交感神经系统活动，这表明冥想深度和「心一境性」(专注一境)——冥想中专注注意力的质量。"
-              }
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY监测心率变异性(HRV)来测量副交感神经系统活动，这表明冥想深度和「心一境性」(专注一境)——冥想中专注注意力的质量。"}
             },
             {
               "@type": "Question",
               "name": "什么是灵性能量加密？",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ZENITY将冥想课程、祈祷计数和HRV数据转化为「灵性能量」值，通过区块链哈希验证创建不可篡改的「功德账本」来追踪长期灵性进程。"
-              }
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY将冥想课程、祈祷计数和HRV数据转化为「灵性能量」值，通过区块链哈希验证创建不可篡改的「功德账本」来追踪长期灵性进程。"}
+            },
+            {
+              "@type": "Question",
+              "name": "ZENITY戒指的电池续航多久？",
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY智能戒指单次充电可续航7天，快速充电15分钟即可使用24小时。"}
+            },
+            {
+              "@type": "Question",
+              "name": "ZENITY戒指防水吗？",
+              "acceptedAnswer": {"@type": "Answer", "text": "是的，ZENITY达到IP68防水等级，完全防尘，可在1米以上水深中长期浸泡。洗手、淋雨、礼拜前小净均无需取下。"}
+            },
+            {
+              "@type": "Question",
+              "name": "外环可以定制宝石吗？",
+              "acceptedAnswer": {"@type": "Answer", "text": "可以。ZENITY专利嵌套环设计允许用户定制外环材质（黄金、铂金）和宝石（钻石、蓝宝石、祖母绿）。外环可拆卸更换，磁吸式卡扣与内环紧密贴合。"}
+            },
+            {
+              "@type": "Question",
+              "name": "旋转计数功能如何工作？",
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY内置6轴陀螺仪，轻转戒指即可自动计数每圈念诵——佛号、泰斯比哈、玫瑰经或呼吸周期。每次计数伴随轻振确认，可自动分组为33或108次一组。"}
+            },
+            {
+              "@type": "Question",
+              "name": "ZENITY需要配合手机使用吗？",
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY的核心功能（计数、计时器）可独立运行。配套应用（iOS和Android）提供详细的HRV分析、修行历史回顾、灵性能量追踪和固件升级功能。"}
+            },
+            {
+              "@type": "Question",
+              "name": "什么是心一境性指数？",
+              "acceptedAnswer": {"@type": "Answer", "text": "心一境性(巴利语ekaggata)是佛教中代表专注力统一的质量指标。ZENITY通过分析HRV相干性模式来计算此指数——相干性越高表示冥想入定越深。指数范围0-100%，可追踪长期趋势。"}
+            },
+            {
+              "@type": "Question",
+              "name": "灵性能量如何计算？",
+              "acceptedAnswer": {"@type": "Answer", "text": "灵性能量（以ZEN为单位）由加权公式计算：冥想时长、HRV相干深度、计数准确度和修行一致性。每次修行生成唯一哈希存入区块链，作为私密且可验证的功绩印记。"}
+            },
+            {
+              "@type": "Question",
+              "name": "ZENITY戒指包含哪些传感器？",
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY包含PPG光电容积描记传感器用于HRV和心率监测、6轴陀螺仪和加速度计用于手势和旋转检测、以及精密触觉马达用于无声振动反馈。"}
             }
           ]
         }
@@ -674,7 +756,7 @@
             <a href="#">修行之道</a>
             <a href="#">戒指科技</a>
             <a href="#">能量加密</a>
-            <a href="#">社群</a>
+            <a href="zenity_blog_hrv_meditation.html">博客</a>
             <a href="index.html" class="lang-switch"><i class="fas fa-globe"></i> English</a>
         </div>
         <div class="dropdown">
@@ -844,6 +926,11 @@
     <footer>
         <div class="container">
             <p><i class="fas fa-ring"></i> ZENITY — 智慧传承 · 科技加持 · 守护每一念每一息</p>
+            <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.2rem;">
+                <a href="https://twitter.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.reddit.com/user/zenitylife" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+            </div>
             <p style="margin-top: 1rem;">© 2026 ZENITY 跨信仰修行实验室 | 数字加密筑基 灵性科技融合</p>
         </div>
     </footer>

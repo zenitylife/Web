@@ -19,10 +19,91 @@
     <link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_islam_en.html">
     <link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_islam_cn.html">
     <script type="application/ld+json">
-    {"@context": "https://schema.org", "@graph": [{"@type": "FAQPage", "mainEntity": [
-      {"@type": "Question", "name": "ZENITY如何帮助伊斯兰齐克尔修行？", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY通过戒指转动自动计数泰斯比哈(念珠)，追踪99尊名，提供礼拜时间提醒，并根据HRV模式测量胡杜尔(灵性临在)指数。"}},
-      {"@type": "Question", "name": "什么是胡杜尔指数？", "acceptedAnswer": {"@type": "Answer", "text": "胡杜尔(حضور)意为「临在」- 伊斯兰冥想期间灵性觉知和宁静的衡量指标。ZENITY通过HRV一致性分析来量化这一状态。"}}
-    ]}]}
+    {
+      "@context": "https://schema.org",
+      "@graph": [{
+        {
+          "@type": "Question",
+          "name": "ZENITY如何支持齐克尔和泰斯比哈？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZENITY通过旋转戒指计数泰斯比哈（33/99珠），追踪真主99名，提醒五时拜功，并通过HRV分析齐克尔中的胡杜尔（心临在）指数。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能计数真主99名吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。设99名模式——每转一圈进到下一名，每33名振动一次，99名完成后长振动。配套应用显示每个名字的阿拉伯文和意义。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "泰斯比哈如何分组？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "默认33组：赞主清净(33)、万赞归主(33)、真主至大(33)。不同振动模式区分各组，保持对每节的觉知。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "有礼拜提醒吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有。根据位置计算五时（晨礼、晌礼、晡礼、昏礼、宵礼），支持多种计算方式（乌姆库拉、穆斯林世界联盟等）。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是胡杜尔（心临在）指数？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "苏菲概念——齐克尔中心灵临在的程度。ZENIFY从HRV相干性和心率模式计算该指数，反映内在状态。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能追踪夜间拜（Tahajjud）吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。夜间拜模式在夜间后三分之一（可配置）以轻振唤醒，记录拜数并监测灵性能量。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "适合莱麦丹月使用吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "非常适合。斋月模式包括：封斋提醒、开斋通知、间歇拜追踪、高贵之夜检测和30天灵性进展报告。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支持苏菲旋转冥想吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "陀螺仪检测萨玛旋转运动，追踪旋转次数、速度和时长。HRV监测出神状态的相干性。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "如何处理小净？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IP68防水——小净时无需取下。甚至可通过手势识别追踪小净完整性——洗手、洗脸、洗肘、抹头、洗脚。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "与数字泰斯比哈有何不同？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "结合泰斯比哈计数与HRV心临在分析、呼吸齐克尔同步、礼拜时间追踪、斋月管理以及区块链验证灵性能量记录——全面的伊斯兰修行伴侣。"
+          }
+        }
+      }]
+    }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -71,7 +152,7 @@
     <div class="container">
         <div class="hero">
             <div class="hero-text"><div class="hero-badge"><i class="fas fa-star-and-crescent"></i> 齐克尔 · 记念安拉</div><h1 class="serif-text">心境因记念安拉而宁静</h1><p>ZENITY齐克尔戒以HRV监测“胡杜尔”（心灵临在）指数，旋转计数赞念安拉99尊名，振动提醒五时拜功。将泰斯比哈（33-33-33）自动分组，量化心灵宁静度。</p><button class="btn-primary" id="discoverRing"><i class="fas fa-ring"></i> 开启记念</button></div>
-            <div class="ring-visual"><img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%236B9C4A' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23F4F1EA' stroke='%234F9A4A' stroke-width='3' /%3E%3C/svg%3E" style="width:260px;"><div class="sacred-symbols"><i class="fas fa-star-and-crescent"></i><i class="fas fa-mosque"></i><i class="fas fa-hands-praying"></i></div></div>
+            <div class="ring-visual"><img class="ring-img" src="Assembled Ring.jpg" alt="ZENITY组合戒指 - 伊斯兰齐克尔智能戒指" style="width: 280px; height: 280px; object-fit: contain;"><div class="sacred-symbols"><i class="fas fa-star-and-crescent"></i><i class="fas fa-mosque"></i><i class="fas fa-hands-praying"></i></div></div>
         </div>
         <div class="faith-grid">
             <div class="faith-card"><i class="fas fa-pray"></i><h3>99尊名计数</h3><p>每念一个尊名轻转戒指，99次一圈圆满</p></div>
@@ -82,7 +163,12 @@
         <div class="tech-showcase"><div class="tech-flex"><div class="tech-item"><div class="tech-icon"><i class="fas fa-heartbeat"></i></div><h4>胡杜尔指数</h4><p>心灵临在度，来自《古兰经》13:28</p><div id="hudurIndex">胡杜尔: 高</div></div><div class="tech-item"><div class="tech-icon"><i class="fas fa-people-arrows"></i></div><h4>旋转舞监测</h4><p>陀螺仪记录旋转圈数，分析狂喜中的内在宁静</p></div><div class="tech-item"><div class="tech-icon"><i class="fas fa-moon"></i></div><h4>夜间拜记录</h4><p>泰罕朱德拜时段自动识别，记录虔敬时长</p></div></div></div>
         <div class="interactive-demo"><div class="demo-text"><h2>指间苏卜哈 · 赞念计数器</h2><p>轻转戒指，每赞念一次“苏卜哈南拉”，戒指轻振；完成33次自动进入下一组。五时拜功时间到，戒指振动提醒，不错过任何一番拜。</p><div class="ring-control" id="demoCountBtn"><i class="fas fa-ring"></i> 赞念计数</div><div class="ring-control" id="demoTimerBtn"><i class="fas fa-hourglass-half"></i> 拜时演示</div><p id="countDisplay">今日赞念：0</p></div><div class="demo-ring"><i class="fas fa-hand-peace"></i><p>佩戴于指 · 记念在心</p></div></div>
         <div class="crypto-energy"><h2>⚡ 记念能量 · 链上存证</h2><p>每一句赞词、每一番拜功，均转化为不可篡改的“齐克尔能量”，见证你的虔敬。</p><div class="energy-badge" id="energyMeter"><i class="fas fa-bolt"></i> 累积赞念: 12,849 次</div></div>
-        <footer><p>ZENITY · 齐克尔戒 — 真的，一切心境因记念安拉而宁静（古兰经13:28）</p></footer>
+        <footer><p>ZENITY · 齐克尔戒 — 真的，一切心境因记念安拉而宁静（古兰经13:28）</p>    <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.2rem; font-size: 1.1rem;">
+        <a href="https://twitter.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="https://instagram.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.reddit.com/user/zenitylife" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+    </div>
+    </footer>
     </div>
     <script>
         let c=0, cd=document.getElementById('countDisplay'), cb=document.getElementById('demoCountBtn'), tb=document.getElementById('demoTimerBtn'), em=document.getElementById('energyMeter'), hudur=document.getElementById('hudurIndex');

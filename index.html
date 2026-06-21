@@ -9,6 +9,7 @@
     <meta name="author" content="ZENITY Cross-Faith Practice Lab">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://zenity.dev/index.html">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://zenity.dev/sitemap.xml">
     <meta name="theme-color" content="#FCF9F4">
     <meta name="language" content="English">
     
@@ -50,7 +51,8 @@
           "areaServed": "Worldwide",
           "sameAs": [
             "https://twitter.com/zenityring",
-            "https://instagram.com/zenityring"
+            "https://instagram.com/zenityring",
+            "https://www.reddit.com/user/zenitylife"
           ]
         },
         {
@@ -68,24 +70,76 @@
           }
         },
         {
+          "@type": "BreadcrumbList",
+          "@id": "https://zenity.dev/#breadcrumb",
+          "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://zenity.dev/"},
+            {"@type": "ListItem", "position": 2, "name": "Smart Ring", "item": "https://zenity.dev/index.html#product"}
+          ]
+        },
+        {
           "@type": "Product",
           "name": "ZENITY Smart Ring",
-          "description": "Wearable smart ring for cross-faith meditation practice with HRV monitoring, rotation counting, haptic timers.",
-          "brand": {
-            "@type": "Brand",
-            "name": "ZENITY"
-          },
+          "description": "Wearable smart ring for cross-faith meditation practice with HRV monitoring, rotation counting, haptic timers, and blockchain energy encryption.",
+          "brand": {"@type": "Brand", "name": "ZENITY"},
           "category": "Wearable Technology",
+          "material": ["Titanium", "Ceramic", "Gold", "Diamond"],
+          "color": ["Gold", "Silver", "Rose Gold", "Black"],
           "offers": {
             "@type": "Offer",
             "priceCurrency": "USD",
             "price": "299",
-            "availability": "https://schema.org/PreOrder"
+            "priceValidUntil": "2027-12-31",
+            "availability": "https://schema.org/PreOrder",
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+              "merchantReturnDays": 30
+            },
+            "shippingDetails": {
+              "@type": "OfferShippingDetails",
+              "shippingDestination": {"@type": "DefinedRegion", "addressCountry": "WW"}
+            }
           },
           "additionalProperty": [
-            {"@type": "PropertyValue", "name": "features", "value": "HRV monitoring, Rotation counting, Haptic meditation timer, Breath tracking, Gesture recognition"},
+            {"@type": "PropertyValue", "name": "features", "value": "HRV monitoring, Rotation counting, Haptic meditation timer, Breath tracking, Gesture recognition, IP68 waterproof"},
             {"@type": "PropertyValue", "name": "supportedPractices", "value": "Buddhism, Daoism, Christianity, Islam, Judaism"},
-            {"@type": "PropertyValue", "name": "waterResistance", "value": "IP68"}
+            {"@type": "PropertyValue", "name": "waterResistance", "value": "IP68"},
+            {"@type": "PropertyValue", "name": "batteryLife", "value": "7 days"},
+            {"@type": "PropertyValue", "name": "sensors", "value": "PPG HRV sensor, 6-axis gyroscope, haptic motor"},
+            {"@type": "PropertyValue", "name": "patentTechnology", "value": "Nested ring design with detachable outer gemstone ring"}
+          ],
+          "review": [
+            {
+              "@type": "Review",
+              "reviewRating": {"@type": "Rating", "ratingValue": 5, "bestRating": 5},
+              "author": {"@type": "Person", "name": "Mingxin"},
+              "reviewBody": "ZENITY's gentle vibration brings me back to breath like a teacher beside me. The HRV One-Pointedness index makes progress visible."
+            },
+            {
+              "@type": "Review",
+              "reviewRating": {"@type": "Rating", "ratingValue": 5, "bestRating": 5},
+              "author": {"@type": "Person", "name": "Amina"},
+              "reviewBody": "During Ramadan, the ring recorded my night prayers and Dhikr. Tasbih counting auto-groups, and the Hudur index reflects inner tranquility."
+            }
+          ],
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": 4.8,
+            "reviewCount": 24,
+            "bestRating": 5
+          }
+        },
+        {
+          "@type": "HowTo",
+          "name": "How to Use ZENITY Smart Ring for Meditation",
+          "description": "Step-by-step guide to using the ZENITY smart ring for your spiritual practice.",
+          "step": [
+            {"@type": "HowToStep", "position": 1, "text": "Wear the assembled ZENITY ring on your index or middle finger."},
+            {"@type": "HowToStep", "position": 2, "text": "Gently twist the ring to count mantras, prayers, or breath cycles."},
+            {"@type": "HowToStep", "position": 3, "text": "Long-press with two fingers to start a meditation timer with haptic feedback."},
+            {"@type": "HowToStep", "position": 4, "text": "The ring monitors your HRV in real-time to calculate your One-Pointedness index."},
+            {"@type": "HowToStep", "position": 5, "text": "Review your spiritual energy score and practice history in the companion app."}
           ]
         },
         {
@@ -94,34 +148,62 @@
             {
               "@type": "Question",
               "name": "What is ZENITY smart ring?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ZENITY is a smart ring designed for cross-faith meditation practitioners. It monitors HRV, counts prayers/mantras, provides haptic meditation timers, and tracks spiritual progress across Buddhism, Daoism, Christianity, Islam, and Judaism."
-              }
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY is a smart ring designed for cross-faith meditation practitioners. It monitors HRV, counts prayers/mantras, provides haptic meditation timers, and tracks spiritual progress across Buddhism, Daoism, Christianity, Islam, and Judaism."}
             },
             {
               "@type": "Question",
               "name": "Which religious practices does ZENITY support?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ZENITY supports five major traditions: Buddhism (Buddha-name counting, breath meditation), Daoism (Wheel-turning, Inner Alchemy), Christianity (Rosary, Contemplative prayer), Islam (Tasbih, Dhikr, Five daily prayers), and Judaism (Berakhot, Sefirat HaOmer)."
-              }
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY supports five major traditions: Buddhism (Buddha-name counting, breath meditation), Daoism (Wheel-turning, Inner Alchemy), Christianity (Rosary, Contemplative prayer), Islam (Tasbih, Dhikr, Five daily prayers), and Judaism (Berakhot, Sefirat HaOmer)."}
             },
             {
               "@type": "Question",
               "name": "How does HRV meditation tracking work?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ZENITY monitors Heart Rate Variability (HRV) to measure parasympathetic nervous system activity, which indicates meditation depth and 'One-Pointedness' (ekaggata) - the quality of focused attention in meditation."
-              }
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY monitors Heart Rate Variability (HRV) to measure parasympathetic nervous system activity, which indicates meditation depth and 'One-Pointedness' (ekaggata) — the quality of focused attention in meditation."}
             },
             {
               "@type": "Question",
               "name": "What is spiritual energy encryption?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "ZENITY converts meditation sessions, prayer counts, and HRV data into a 'spiritual energy' value, with blockchain hash verification creating an immutable 'Merit Ledger' to track long-term spiritual progress."
-              }
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY converts meditation sessions, prayer counts, and HRV data into a 'spiritual energy' value, with blockchain hash verification creating an immutable 'Merit Ledger' to track long-term spiritual progress."}
+            },
+            {
+              "@type": "Question",
+              "name": "What is the battery life of ZENITY ring?",
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY smart ring has a 7-day battery life on a single charge, with a quick-charge feature that provides 24 hours of use from a 15-minute charge."}
+            },
+            {
+              "@type": "Question",
+              "name": "Is ZENITY ring waterproof?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes, ZENITY has an IP68 water resistance rating, meaning it is fully protected against dust and can be submerged in water beyond 1 meter for extended periods. You can wear it while washing hands, in the rain, or during ablution before prayer."}
+            },
+            {
+              "@type": "Question",
+              "name": "Can I customize the outer ring with gemstones?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Yes, ZENITY's patented nested ring design allows you to customize the outer ring with various precious metals (gold, platinum) and gemstones (diamond, sapphire, emerald). The outer ring is interchangeable and snaps onto the inner smart ring."}
+            },
+            {
+              "@type": "Question",
+              "name": "How does the rotation counting feature work?",
+              "acceptedAnswer": {"@type": "Answer", "text": "The ZENITY ring uses a built-in 6-axis gyroscope to detect rotation gestures. Twist the ring gently to count each repetition — Buddha names, Tasbih, Rosary beads, or breath cycles. The ring vibrates briefly at each count and can group counts into sets of 33 or 108."}
+            },
+            {
+              "@type": "Question",
+              "name": "Does ZENITY require a smartphone app?",
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY works independently for core functions like counting and timers, but a companion app (iOS and Android) is available for detailed HRV analysis, practice history, spiritual energy tracking, and firmware updates."}
+            },
+            {
+              "@type": "Question",
+              "name": "What is the One-Pointedness (ekaggata) index?",
+              "acceptedAnswer": {"@type": "Answer", "text": "One-Pointedness (ekaggata in Pali) is a Buddhist meditation quality representing unified, focused attention. ZENITY calculates this index by analyzing HRV coherence patterns — higher coherence indicates deeper meditative absorption. The index ranges from 0-100% and trends over time."}
+            },
+            {
+              "@type": "Question",
+              "name": "How is spiritual energy calculated?",
+              "acceptedAnswer": {"@type": "Answer", "text": "Spiritual energy (measured in ZEN) is calculated from a weighted formula combining: meditation duration, HRV coherence depth, rotation count accuracy, and session consistency. Each session generates a unique hash stored on the blockchain as a 'Merit Imprint' that is private and verifiable."}
+            },
+            {
+              "@type": "Question",
+              "name": "What sensors does the ZENITY ring contain?",
+              "acceptedAnswer": {"@type": "Answer", "text": "ZENITY contains a PPG (photoplethysmography) sensor for HRV and heart rate monitoring, a 6-axis gyroscope and accelerometer for gesture and rotation detection, and a precision haptic motor for silent vibration feedback."}
             }
           ]
         }
@@ -662,7 +744,7 @@
             <a href="#">Path of Practice</a>
             <a href="#">Ring Technology</a>
             <a href="#">Energy Encryption</a>
-            <a href="#">Community</a>
+            <a href="zenity_blog_hrv_meditation.html">Blog</a>
             <a href="cn.html" class="lang-switch"><i class="fas fa-globe"></i> 中文</a>
         </div>
         <div class="dropdown">
@@ -826,6 +908,11 @@
     <footer>
         <div class="container">
             <p><i class="fas fa-ring"></i> ZENITY — Wisdom Legacy · Technology Empowerment · Guarding Every Thought, Every Breath</p>
+            <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.2rem;">
+                <a href="https://twitter.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.reddit.com/user/zenitylife" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+            </div>
             <p style="margin-top: 1rem;">© 2026 ZENITY Cross-Faith Practice Lab | Digital Encryption Foundation · Spiritual Technology Fusion</p>
         </div>
     </footer>

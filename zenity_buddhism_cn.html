@@ -21,16 +21,88 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
+      "@graph": [{
         {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {"@type": "Question", "name": "ZENITY如何帮助佛教禅修？", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY监测HRV计算心一境性(ekaggata)指数，自动计数佛号，跟踪呼吸禅修，提供昏沉提醒，并计时炷香禅坐。"}},
-            {"@type": "Question", "name": "什么是心一境性指数？", "acceptedAnswer": {"@type": "Answer", "text": "心一境性(ekaggata)是佛教中衡量禅修质量的关键指标。ZENITY使用HRV变异性模式来量化这种专注注意力的状态。"}},
-            {"@type": "Question", "name": "ZENITY可以计数佛号吗？", "acceptedAnswer": {"@type": "Answer", "text": "是的，ZENITY的转动计数功能可以通过戒指手势自动追踪念佛诵持，作为数字佛珠计数器。"}}
-          ]
+          "@type": "Question",
+          "name": "ZENITY如何帮助佛教冥想修行？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZENITY通过HRV监测计算心一境性指数，旋转戒指计数佛号，追踪呼吸冥想（安那般那）时长，昏沉时触觉提醒，并支持焚香冥想计时。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是心一境性指数？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "心一境性（巴利语ekaggata）是佛教中专注力的质量标准。ZENITY通过分析HRV相干性模式计算此指数——相干性越高，表示禅定越深。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "ZENITY能自动计数佛号吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。内置陀螺仪检测戒指旋转——轻转戒指即计数一次，像转木佛珠一样。每108次为一圈，振动确认。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能追踪安那般那呼吸冥想吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。通过HRV呼吸性窦性心律不齐监测呼吸节奏，引导1-10息计数，心散时提醒，并生成呼吸相干性报告。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "有冥想计时器吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有。双指长按启动，结束时轻振——像木鱼或钟声。预设30分钟（一柱香）、60分钟（一座），支持自定义闭关模式。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "昏沉提醒如何工作？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "监测HRV模式判断昏沉或掉举，相干性下降时轻振提醒回到呼吸——深度昏沉时振动更强。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能计拜佛数量吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。加速度计检测五体投地动作并自动计数，适用于拜忏和磕大头修行。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是功德账本？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "每次修行基于HRV深度、时长和念诵数生成唯一功绩印记哈希，上链存储为私密不可篡改的修行记录。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "适合初学者吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "适合。初学者受益于引导式呼吸计数和昏沉提醒。进阶者可追踪心一境性深度、设定闭关目标和分析长期HRV趋势。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "闭关时电池能用多久？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "正常使用7天。密集闭关（持续HRV监测）约4-5天。快充15分钟可用24小时。"
+          }
         }
-      ]
+      }]
     }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
@@ -373,7 +445,7 @@
             </div>
             <div class="ring-visual">
                 <div class="ring-glow"></div>
-                <img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%23C9AA7B' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23FEF7E8' stroke='%23A67B45' stroke-width='3' /%3E%3Cpath d='M100 40 L100 60 M100 140 L100 160 M60 100 L40 100 M140 100 L160 100' stroke='%23B78F5A' stroke-width='4' stroke-linecap='round' /%3E%3C/svg%3E" alt="ZENITY Ring">
+                <img class="ring-img" src="Assembled Ring.jpg" alt="ZENITY组合戒指 - 佛教禅修智能戒指" style="width: 280px; height: 280px; object-fit: contain;">
                 <div class="sacred-symbols">
                     <i class="fas fa-buddha"></i>
                     <i class="fas fa-leaf"></i>
@@ -479,6 +551,11 @@
     <footer>
         <div class="container">
             <p><i class="fas fa-ring"></i> ZENITY · 禅戒 — 念起即觉，觉之即无</p>
+            <p >            <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.2rem;">
+                <a href="https://twitter.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.reddit.com/user/zenitylife" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+            </div>
             <p style="margin-top: 1rem;">© 2026 ZENITY 禅修科技实验室 | 以戒为师 以数为镜</p>
         </div>
     </footer>

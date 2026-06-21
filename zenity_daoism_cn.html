@@ -21,10 +21,88 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [{"@type": "FAQPage", "mainEntity": [
-        {"@type": "Question", "name": "ZENITY如何帮助道教内丹修炼？", "acceptedAnswer": {"@type": "Answer", "text": "ZENITY计数转河车次数，提供子午卯酉时段提醒，在冥想期间追踪气血运行和脏腑火候状态。"}},
-        {"@type": "Question", "name": "什么是小周天修炼？", "acceptedAnswer": {"@type": "Answer", "text": "小周天是道教基础的内丹呼吸冥想技法。ZENITY通过转动计数和HRV分析追踪这些周天的完成情况。"}}
-      ]}]
+      "@graph": [{
+        {
+          "@type": "Question",
+          "name": "ZENITY如何支持道教内丹修行？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ZENITY记录转河车圈数，提供子午卯酉四时提醒，通过HRV监测气血运行状态，记录小周天进度。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是转河车计数？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "转河车是道教转动手掌以运行气血的功法。ZENITY陀螺仪检测每圈转动自动计数，如同数字能量转轮。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "有子午卯酉提醒吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "有。四个关键时辰振动提醒：子(23-1)、午(11-13)、卯(5-7)、酉(17-19)——内丹修炼的最佳时间。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "HRV与气的关系是什么？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "道教认为气脉通畅表现为HRV相干性高。ZENITY的HRV分析帮助可视化气血和合状态——相干性越高表示能量循环越顺畅。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能追踪小周天吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。编程引导小周天——气沿督脉上升、任脉下降。每到穴位（大椎、命门、百会等）触觉振动标记。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "什么是脏腑火候调节？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "基于中医五行理论，ZENITY分析HRV模式识别脏腑火候失衡（心火、肝火等）并建议相应功法调整。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "支持节气修行吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "支持。配套应用包含24节气及相应道家功法推荐——从冬至一阳生到夏至阳极。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "太极拳手势识别如何工作？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "6轴陀螺仪识别基本太极拳动作，包括云手、揽雀尾等。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "能用于静坐吗？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "可以。静坐模式监测HRV相干性、追踪时长、提供收功报告——完美支持'静坐观内'的基础功夫。"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "与健身追踪器有何不同？",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "专为修行设计：功法特定算法（转河车、气相干性、火候检测）、按传统时辰触觉计时、区块链验证能量记录。"
+          }
+        }
+      }]
     }
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
@@ -366,7 +444,7 @@
             </div>
             <div class="ring-visual">
                 <div class="ring-glow"></div>
-                <img class="ring-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='80' fill='none' stroke='%238FAA7B' stroke-width='12' /%3E%3Ccircle cx='100' cy='100' r='52' fill='%23F5F0E6' stroke='%236C8B52' stroke-width='3' /%3E%3Cpath d='M100 40 L100 60 M100 140 L100 160 M60 100 L40 100 M140 100 L160 100' stroke='%238FAA7B' stroke-width='4' stroke-linecap='round' /%3E%3C/svg%3E" alt="ZENITY Ring">
+                <img class="ring-img" src="Assembled Ring.jpg" alt="ZENITY组合戒指 - 道教内丹智能戒指" style="width: 280px; height: 280px; object-fit: contain;">
                 <div class="sacred-symbols">
                     <i class="fas fa-yin-yang"></i>
                     <i class="fas fa-feather-alt"></i>
@@ -467,6 +545,11 @@
     <footer>
         <div class="container">
             <p><i class="fas fa-ring"></i> ZENITY · 道戒 — 人法地，地法天，天法道，道法自然</p>
+            <p >            <div style="margin-top: 1.5rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 1.2rem;">
+                <a href="https://twitter.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/zenityring" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.reddit.com/user/zenitylife" target="_blank" rel="noopener" style="color:#6C6358; text-decoration:none;" aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a>
+            </div>
             <p style="margin-top: 1rem;">© 2026 ZENITY 丹道科技实验室 | 以器载道 以数证真</p>
         </div>
     </footer>
