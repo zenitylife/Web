@@ -3,102 +3,102 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://zenity.dev/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/index.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/cn.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zenity.dev/index.html"/>
+    <loc>https://zenity.top/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/cn.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zenity.top/index.html"/>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/cn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/index.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/cn.html"/>
+    <loc>https://zenity.top/cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/index.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/cn.html"/>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_buddhism_en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_buddhism_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_buddhism_cn.html"/>
+    <loc>https://zenity.top/zenity_buddhism_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_buddhism_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_buddhism_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_buddhism_cn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_buddhism_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_buddhism_cn.html"/>
+    <loc>https://zenity.top/zenity_buddhism_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_buddhism_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_buddhism_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_daoism_en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_daoism_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_daoism_cn.html"/>
+    <loc>https://zenity.top/zenity_daoism_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_daoism_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_daoism_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_daoism_cn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_daoism_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_daoism_cn.html"/>
+    <loc>https://zenity.top/zenity_daoism_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_daoism_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_daoism_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_christianity_en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_christianity_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_christianity_cn.html"/>
+    <loc>https://zenity.top/zenity_christianity_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_christianity_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_christianity_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_christianity_cn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_christianity_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_christianity_cn.html"/>
+    <loc>https://zenity.top/zenity_christianity_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_christianity_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_christianity_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_islam_en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_islam_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_islam_cn.html"/>
+    <loc>https://zenity.top/zenity_islam_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_islam_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_islam_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_islam_cn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_islam_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_islam_cn.html"/>
+    <loc>https://zenity.top/zenity_islam_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_islam_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_islam_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_judaism_en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_judaism_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_judaism_cn.html"/>
+    <loc>https://zenity.top/zenity_judaism_en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_judaism_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_judaism_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_judaism_cn.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.dev/zenity_judaism_en.html"/>
-    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.dev/zenity_judaism_cn.html"/>
+    <loc>https://zenity.top/zenity_judaism_cn.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://zenity.top/zenity_judaism_en.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://zenity.top/zenity_judaism_cn.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_blog_hrv_meditation.html</loc>
+    <loc>https://zenity.top/zenity_blog_hrv_meditation.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_blog_tasbih.html</loc>
+    <loc>https://zenity.top/zenity_blog_tasbih.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://zenity.dev/zenity_blog_guide.html</loc>
+    <loc>https://zenity.top/zenity_blog_guide.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
