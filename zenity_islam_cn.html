@@ -109,10 +109,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
-        body { background-color: #F4F1EA; font-family: 'Inter', sans-serif; color: #2C3A2B; }
+        body { background-color: #F4F1EA; font-family: 'Inter', sans-serif; color: #2C3A2B; 
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;}
         .serif-text { font-family: 'Cormorant Garamond', serif; }
         .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
-        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; border-bottom: 1px solid rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            background: rgba(252, 249, 244, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            z-index: 50; }
         .logo { font-size: 1.8rem; font-weight: 500; font-family: 'Cormorant Garamond', serif; background: linear-gradient(135deg, #2C6B2F, #4F9A4A); background-clip: text; -webkit-background-clip: text; color: transparent; }
         .nav-links a { text-decoration: none; color: #3C6E3A; margin-left: 2rem; }
         .btn-outline { border: 1px solid #2C6B2F; padding: 0.5rem 1.3rem; border-radius: 40px; background: transparent; cursor: pointer; }
@@ -135,7 +143,15 @@
         .btn-primary { background: #4F9A4A; color: white; border: none; padding: 0.9rem 2rem; border-radius: 40px; cursor: pointer; }
         footer { text-align: center; padding: 2rem; border-top: 1px solid #DFE6D6; margin-top: 3rem; }
         @media (max-width:800px){ .hero-text h1{ font-size:2.5rem; } }
-    </style>
+    
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+</style>
 </head>
 <body>
     <nav class="navbar">

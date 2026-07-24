@@ -109,13 +109,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         * { margin:0; padding:0; box-sizing:border-box; }
-        body { background-color: #F8F5F0; font-family: 'Inter', sans-serif; color: #2F2E2B; }
+        body { background-color: #F8F5F0; font-family: 'Inter', sans-serif; color: #2F2E2B; 
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;}
         .serif-text { font-family: 'Cormorant Garamond', serif; font-weight: 500; letter-spacing: 0.02em; }
         .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
-        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1400px; margin: 0 auto; border-bottom: 1px solid rgba(0,0,0,0.05); }
+        .navbar { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; max-width: 1400px; margin: 0 auto; border-bottom: 1px solid rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            background: rgba(252, 249, 244, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            z-index: 50; }
         .logo { font-size: 1.8rem; font-weight: 500; font-family: 'Cormorant Garamond', serif; background: linear-gradient(135deg, #6A5A4F, #9C8B78); background-clip: text; -webkit-background-clip: text; color: transparent; }
         .nav-links { display: flex; gap: 2.5rem; font-weight: 400; font-size: 0.95rem; }
-        .nav-links a { text-decoration: none; color: #5E5549; transition: 0.2s; }
+        .nav-links a { text-decoration: none; color: #5E5549; transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1); }
         .nav-links a:hover { color: #9B7E64; }
         .btn-outline { border: 1px solid #6A5A4F; padding: 0.5rem 1.3rem; border-radius: 40px; background: transparent; font-weight: 500; cursor: pointer; }
         .btn-outline:hover { background: #6A5A4F; color: white; }
@@ -132,7 +140,7 @@
         .section-title { text-align: center; font-size: 2.2rem; font-weight: 500; margin-bottom: 1rem; }
         .section-sub { text-align: center; color: #6A5A4F; max-width: 650px; margin: 0 auto 3rem auto; }
         .faith-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 2rem; }
-        .faith-card { background: #FFFFFFE6; border-radius: 32px; padding: 1.8rem 1.5rem; text-align: center; transition: all 0.3s ease; border: 1px solid #F0EAE2; border-top: 3px solid #C2AD93; }
+        .faith-card { background: #FFFFFFE6; border-radius: 32px; padding: 1.8rem 1.5rem; text-align: center; transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1); border: 1px solid #F0EAE2; border-top: 3px solid #C2AD93; }
         .faith-card i { font-size: 2.2rem; margin-bottom: 1rem; color: #9B7E64; }
         .faith-card h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
         .faith-card p { font-size: 0.85rem; color: #5F564B; }
@@ -156,7 +164,15 @@
         .btn-primary { background: #9B7E64; color: white; border: none; padding: 0.9rem 2rem; border-radius: 40px; font-weight: 500; cursor: pointer; }
         .btn-primary:hover { background: #7A624C; }
         @media (max-width:800px){ .hero-text h1{ font-size:2.5rem; } .navbar{ flex-direction:column; } }
-    </style>
+    
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+</style>
 </head>
 <body>
     <nav class="navbar">
