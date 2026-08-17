@@ -31,6 +31,10 @@
     <!-- Hreflang for internationalization -->
     <link rel="alternate" hreflang="en" href="https://zenity.top/index.html">
     <link rel="alternate" hreflang="zh-CN" href="https://zenity.top/cn.html">
+    <link rel="alternate" hreflang="ar" href="https://zenity.top/ar.html">
+    <link rel="alternate" hreflang="fr" href="https://zenity.top/fr.html">
+    <link rel="alternate" hreflang="ja" href="https://zenity.top/ja.html">
+    <link rel="alternate" hreflang="ko" href="https://zenity.top/ko.html">
     <link rel="alternate" hreflang="x-default" href="https://zenity.top/index.html">
     
     <!-- Preconnect for performance -->
@@ -824,7 +828,12 @@
                 transition-duration: 0.01ms !important;
             }
         }
-    </style>
+    
+        .lang-menu { display: inline-flex; align-items: center; gap: 0.35rem;
+            font-size: 0.85rem; color: var(--ink-mute); }
+        .lang-menu a { color: var(--ink-mute); text-decoration: none; }
+        .lang-menu a:hover { color: var(--taupe); }
+</style>
 </head>
 <body>
     <nav class="navbar">
@@ -834,7 +843,7 @@
             <a href="#">戒指科技</a>
             <a href="#">能量加密</a>
             <a href="zenity_blog_hrv_meditation.html">博客</a>
-            <a href="index.html" class="lang-switch"><i class="fas fa-globe"></i> English</a>
+            <span class="lang-menu"><i class="fas fa-globe"></i> <a href="index.html">EN</a>·<a href="cn.html">中文</a>·<a href="ar.html">ع</a>·<a href="fr.html">FR</a>·<a href="ja.html">日</a>·<a href="ko.html">한</a></span>
         </div>
         <div class="dropdown">
             <div class="btn-outline" style="cursor:pointer;">守护心念 <i class="fas fa-chevron-down" style="font-size:0.7rem;"></i></div>

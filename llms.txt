@@ -1,0 +1,43 @@
+# ZENITY Smart Ring
+
+> ZENITY is a smart ring for cross-faith meditation practice. It combines HRV
+> (heart-rate-variability) monitoring, rotation counting (prayer-bead style),
+> haptic meditation timers, and a patented nested two-ring design (smart inner
+> ring + gemstone outer ring). Supported traditions: Buddhism, Daoism,
+> Christianity, Islam, Judaism.
+
+## Key facts
+
+- Product: ZENITY Assembled Ring (smart inner ring + gemstone outer ring)
+- Sensors: PPG HRV / heart-rate sensor, 6-axis gyroscope, haptic motor
+- Battery: 7 days; Water resistance: IP68; Price: USD 299 (pre-order)
+- Metrics: HRV "One-Pointedness" (ekaggata) index, RSA breath depth,
+  drowsiness/agitation detection
+- Practices supported: Buddha-name counting, breath meditation, Daoist
+  wheel-turning (Minor Heavenly Cycle), Rosary, Centering Prayer, Jesus Prayer,
+  Tasbih/Dhikr (33/99 groupings), five daily prayers, Berakhot, Sefirat HaOmer,
+  Shabbat mode
+- Spiritual energy: meditation sessions convert to ZEN energy credentials with
+  blockchain hash verification ("Merit Ledger")
+
+## Pages
+
+- [Home (EN)](https://zenity.top/index.html)
+- [首页 (中文)](https://zenity.top/cn.html)
+- [الرئيسية (العربية)](https://zenity.top/ar.html)
+- [Accueil (Français)](https://zenity.top/fr.html)
+- [ホーム (日本語)](https://zenity.top/ja.html)
+- [홈 (한국어)](https://zenity.top/ko.html)
+- [Buddhism practice](https://zenity.top/zenity_buddhism_en.html)
+- [Daoism practice](https://zenity.top/zenity_daoism_en.html)
+- [Christianity practice](https://zenity.top/zenity_christianity_en.html)
+- [Islam practice](https://zenity.top/zenity_islam_en.html)
+- [Judaism practice](https://zenity.top/zenity_judaism_en.html)
+- [Blog: HRV & meditation](https://zenity.top/zenity_blog_hrv_meditation.html)
+- [Blog: Tasbih counting](https://zenity.top/zenity_blog_tasbih.html)
+
+## Contact
+
+- Twitter: https://twitter.com/zenityring
+- Instagram: https://instagram.com/zenityring
+- Reddit: https://www.reddit.com/user/zenitylife
